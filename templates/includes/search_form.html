@@ -1,3 +1,6 @@
+{% load crispy_forms_filters %}
+
 <form style="display:flex" action="" method="get">
-  {{ page_content }}
+  {{ search_form|crispy }}
+  <input style="width: 100px; !important flex: 1;" class="mx-2 btn btn-outline-secondary fw-semibold" type="submit" value="Search">
 </form>

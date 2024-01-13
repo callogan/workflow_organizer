@@ -31,6 +31,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,6 +43,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "assignment_handler",
     "debug_toolbar",
+    "django_bootstrap5",
+    "crispy_forms",
+    "crispy_bootstrap4",
     "taggit",
 ]
 
@@ -73,6 +77,10 @@ TEMPLATES = [
         },
     },
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 WSGI_APPLICATION = "workflow_organizer.wsgi.application"
 
@@ -133,9 +141,16 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 TAGGIT_CASE_INSENSITIVE = True
+
+DJANGO_BOOTSTRAP_CUSTOM_CSS_OVERRIDES = {"--bs-progress-height": None}
