@@ -571,6 +571,11 @@ class ProjectCreate(LoginRequiredMixin, generic.CreateView):
                         )
                     )
 
+            else:
+                url = reverse("assignment_handler:project-create")
+                context = {"redirect_url": url}
+                return render(request, "assignment_handler/error_page.html", context)
+
     def get_success_url(self):
         return reverse_lazy("assignment_handler:dashboard")
 
@@ -715,6 +720,11 @@ class ProjectUpdate(LoginRequiredMixin, generic.UpdateView):
                             kwargs={"pk": self.kwargs["pk"]},
                         )
                     )
+
+            else:
+                url = reverse("assignment_handler:project-update", kwargs={"pk": self.kwargs["pk"]})
+                context = {"redirect_url": url}
+                return render(request, "assignment_handler/error_page.html", context)
 
     def get_success_url(self):
         return reverse_lazy(
