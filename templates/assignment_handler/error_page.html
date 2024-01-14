@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Error page {% endblock title %}
+
+{% block content %}
+
+  <div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="text-center">
+      <h1 class="display-1 fw-bold">500</h1>
+      <p class="fs-3"> <span class="text-danger">Oops!</span> Internal server error</p>
+      <p class="lead">
+        "Oops, an internal server error occurred while processing the request. Our engineers have been notified
+        and will work to fix this right away! Please try again later or contact support."
+      </p>
+      {% if "create" in redirect_url %}
+        <a href="{% url 'assignment_handler:project-create' %}" class="btn btn-success">Go to project create page</a>
+      {% else %}
+        <a href="{% url 'assignment_handler:project-update' %}" class="btn btn-primary">Go to project update page</a>
+      {% endif %}
+    </div>
+  </div>
+
+{% endblock content %}
