@@ -45,6 +45,18 @@
       </svg>
     </div>
     <section class="container-fluid">
+      <div style="width: 100%; padding-left: 190px" class="mb-3 d-flex align-items-center">
+        <label class="p me-2" style="font-size: 20px; padding-top: 5px;">Tags:</label>
+        {% for tag in tags %}
+          <a
+            style="background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size: 12px; height: 22px; padding: 3px 3px; margin: 0 3px;"
+            class="btn button-sm text-white shadow-info fw-semibold"
+            href="{% url 'assignment_handler:task-panel' %}?tag={{ tag.name | urlencode }}"
+          >
+            {{ tag.name }}
+          </a>
+        {% endfor %}
+      </div>
       <section style="width: 80%" class="container">
         <div class="row widget-row justify-center">
           <div class="col-md-4 col-4 d-flex flex-column">
@@ -71,6 +83,35 @@
                             <span class="text-primary fst-italic">#{{ task.task_type.name }}</span>
                           </div>
                         </a>
+                        <div style="margin-top: 0.00001rem; flex:1">
+                          {% if task.tags.all %}
+                            {% if task.tags_remained > 0 %}
+                              <div class="dropdown">
+                                <button class="btn button-sm mx-n0 mb-1 dropdown-toggle fw-semibold" type="button" id="task-tag-dropdown-{{ task.id }}-1" data-bs-toggle="dropdown" aria-expanded="false" style="float: right; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 10px; color: white; margin: 0 2px">
+                                  +{{ task.tags_remained }}
+                                </button>
+                                <ul class="dropdown-menu px-2 py-3" aria-labelledby="task-tag-dropdown-{{ task.id }}">
+                                  {% for tag in task.tags.all|slice:"1:" %}
+                                  <li style="margin-bottom: 5px;">
+                                    <a
+                                      style="background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size: 10px; height: 22px; padding: 3px 3px; margin: 0 3px;"
+                                      class="btn button-sm text-white shadow-info dropdown-item fw-semibold"
+                                      href="{% url 'assignment_handler:task-detail' pk=task.id %}"
+                                    >
+                                      {{ tag.name }}
+                                    </a>
+                                  </li>
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                            {% endif %}
+                            {% for tag in task.tags.all|slice:":1" %}
+                              <a href="{% url 'assignment_handler:task-detail' pk=task.id %}" style="text-decoration: none;">
+                                <button style="float: right; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 10px; color: white" class="btn button-sm mx-n0 mb-1 fw-semibold">{{ tag.name|truncatechars:"8" }}</button>
+                              </a>
+                            {% endfor %}
+                          {% endif %}
+                        </div>
                       </div>
                       <a href="{% url 'assignment_handler:task-detail' pk=task.id %}" style="text-decoration: none;">
                         <div style="height: 100px" class="card-body mt-5 d-flex align-items-center">
@@ -133,6 +174,35 @@
                             <span class="text-primary fst-italic">#{{ task.task_type.name }}</span>
                           </div>
                         </a>
+                        <div style="margin-top: 0.00001rem; flex:1">
+                          {% if task.tags.all %}
+                            {% if task.tags_remained > 0 %}
+                              <div class="dropdown">
+                                <button class="btn button-sm mx-n0 mb-1 dropdown-toggle fw-semibold" type="button" id="task-tag-dropdown-{{ task.id }}-2" data-bs-toggle="dropdown" aria-expanded="false" style="float: right; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 10px; color: white; margin: 0 2px">
+                                  +{{ task.tags_remained }}
+                                </button>
+                                <ul class="dropdown-menu px-2 py-3" aria-labelledby="task-tag-dropdown-{{ task.id }}">
+                                  {% for tag in task.tags.all|slice:"1:" %}
+                                  <li style="margin-bottom: 5px;">
+                                    <a
+                                      style="background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size: 10px; height: 22px; padding: 3px 3px; margin: 0 3px;"
+                                      class="btn button-sm text-white shadow-info dropdown-item fw-semibold"
+                                      href="{% url 'assignment_handler:task-detail' pk=task.id %}"
+                                    >
+                                      {{ tag.name }}
+                                    </a>
+                                  </li>
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                            {% endif %}
+                            {% for tag in task.tags.all|slice:":1" %}
+                            <a href="{% url 'assignment_handler:task-detail' pk=task.id %}" style="text-decoration: none;">
+                              <button style="float: right; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 10px; color: white" class="btn button-sm mx-n0 mb-1 fw-semibold">{{ tag.name|truncatechars:"8" }}</button>
+                            </a>
+                            {% endfor %}
+                          {% endif %}
+                        </div>
                       </div>
                       <a href="{% url 'assignment_handler:task-detail' pk=task.id %}" style="text-decoration: none;">
                         <div style="height: 100px" class="card-body mt-5 d-flex align-items-center">
@@ -195,6 +265,35 @@
                             <span class="text-primary fst-italic">#{{ task.task_type.name }}</span>
                           </div>
                         </a>
+                        <div style="margin-top: 0.00001rem; flex:1">
+                          {% if task.tags.all %}
+                            {% if task.tags_remained > 0 %}
+                              <div class="dropdown">
+                                <button class="btn button-sm mx-n0 mb-1 dropdown-toggle fw-semibold" type="button" id="task-tag-dropdown-{{ task.id }}-3" data-bs-toggle="dropdown" aria-expanded="false" style="float: right; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 10px; color: white; margin: 0 2px">
+                                  +{{ task.tags_remained }}
+                                </button>
+                                <ul class="dropdown-menu px-2 py-3" aria-labelledby="task-tag-dropdown-{{ task.id }}">
+                                  {% for tag in task.tags.all|slice:"1:" %}
+                                  <li style="margin-bottom: 5px;">
+                                    <a
+                                      style="background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size: 10px; height: 22px; padding: 3px 3px; margin: 0 3px;"
+                                      class="btn button-sm text-white shadow-info dropdown-item fw-semibold"
+                                      href="{% url 'assignment_handler:task-detail' pk=task.id %}"
+                                    >
+                                      {{ tag.name }}
+                                    </a>
+                                  </li>
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                            {% endif %}
+                            {% for tag in task.tags.all|slice:":1" %}
+                            <a href="{% url 'assignment_handler:task-detail' pk=task.id %}" style="text-decoration: none;">
+                              <button style="float: right; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 10px; color: white" class="btn button-sm mx-n0 mb-1 fw-semibold">{{ tag.name|truncatechars:"8" }}</button>
+                            </a>
+                            {% endfor %}
+                          {% endif %}
+                        </div>
                       </div>
                       <a href="{% url 'assignment_handler:task-detail' pk=task.id %}" style="text-decoration: none;">
                         <div style="height: 100px" class="card-body mt-5 d-flex align-items-center">

@@ -786,27 +786,58 @@ class TaskPanelView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        queue_tasks = (
-            Task.objects.annotate(assignees_count=Count("assignees"))
-            .filter(assignees_count=0)
-            .distinct()
-        )
+        tag = self.request.GET.get("tag") or ""
+        tags = Task.tags.filter(name=tag) if tag else Task.tags.all()
 
-        underway_tasks = (
-            Task.objects.annotate(assignees_count=Count("assignees"))
-            .filter(Q(is_completed=False) & Q(assignees_count__gt=0))
-            .distinct()
-        )
+        if tag:
+            queue_tasks = (
+                Task.objects.annotate(assignees_count=Count("assignees"))
+                .filter(assignees_count=0, tags__name=tag)
+                .distinct()
+            )
+        else:
+            queue_tasks = (
+                Task.objects.annotate(assignees_count=Count("assignees"))
+                .filter(assignees_count=0)
+                .distinct()
+            )
 
-        completed_tasks = (
-            Task.objects.annotate(assignees_count=Count("assignees"))
-            .filter(is_completed=True, assignees_count__gt=0)
-            .distinct()
-        )
+        if tag:
+            underway_tasks = (
+                Task.objects.annotate(assignees_count=Count("assignees"))
+                .filter(
+                    Q(is_completed=False) & Q(assignees_count__gt=0), tags__name=tag
+                )
+                .distinct()
+            )
+        else:
+            underway_tasks = (
+                Task.objects.annotate(assignees_count=Count("assignees"))
+                .filter(Q(is_completed=False) & Q(assignees_count__gt=0))
+                .distinct()
+            )
 
-        context["queue_tasks"] = queue_tasks
-        context["underway_tasks"] = underway_tasks
-        context["completed_tasks"] = completed_tasks
+        if tag:
+            completed_tasks = (
+                Task.objects.annotate(assignees_count=Count("assignees"))
+                .filter(is_completed=True, assignees_count__gt=0, tags__name=tag)
+                .distinct()
+            )
+        else:
+            completed_tasks = (
+                Task.objects.annotate(assignees_count=Count("assignees"))
+                .filter(is_completed=True, assignees_count__gt=0)
+                .distinct()
+            )
+
+        context.update(
+            {
+                "queue_tasks": queue_tasks,
+                "underway_tasks": underway_tasks,
+                "completed_tasks": completed_tasks,
+                "tags": tags
+            }
+        )
 
         return context
 
@@ -859,7 +890,7 @@ class ProjectTrackingPanelView(TemplateView):
                 "predominant_status_uncompleted": predominant_status_uncompleted,
                 "average_percent_completed": average_percent_completed,
                 "predominant_status_completed": predominant_status_completed,
-                "average_percent_uncompleted": average_percent_uncompleted,
+                "average_percent_uncompleted": average_percent_uncompleted
             }
         )
 

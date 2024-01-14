@@ -129,6 +129,23 @@
                         <i class="text-primary">#{{ task.task_type }}</i>
                       </td>
                     </tr>
+                    <tr>
+                      {% if task.tags.all %}
+                        <td class="text-muted header-name"><i>Tags</i></td>
+                        <td>
+                          <div class="dropdown">
+                            {% for tag in task.tags.all %}
+                              <a
+                              style="color: white; background-color: rgb(2, 124, 199); border: 1px solid rgba(60, 199, 255, .2); font-size:10px; height:22px; padding:3px 3px; margin: 0"
+                              class="btn button-sm fw-semibold"
+                              href="{% url 'assignment_handler:task-panel' %}?tag={{ tag.name | urlencode }}">
+                              {{ tag.name }}
+                              </a>
+                            {% endfor %}
+                          </div>
+                        </td>
+                      {% endif %}
+                    </tr>
                   </tbody>
                 </table>
                 <hr class="hr mb-4" style="border-bottom: 1px solid rgba(0, 0, 0, .5)">
