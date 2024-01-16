@@ -157,37 +157,37 @@
                 <p class="mb-0" style="margin-left: -150px">{{ worker.email }}</p>
               </div>
             </div>
-            <div class="widget-full-width">
-              <div class="row mt-6 mb-4" style="width: 1200px">
-                <div class="col-3">
-                  <div class="header mb-2 text-center">
-                    <span class="h6">{{ worker.rating_points }}</span>
-                    <span>rating points</span>
-                  </div>
-                  <div class="body">
-                  {% if user.team == worker.team or has_common_task %}
-                    <form method="post" action="{% url 'assignment_handler:worker-detail' pk=worker.id %}">
-                      {% csrf_token %}
-                      <a class="dropdown-item py-2 ps-3 border-radius-md btn btn-danger text-white rating-update-button" href="#" style="background-color: rgba(2, 124, 199, 0.8);">
-                        <h6 class="dropdown-header font-weight-bolder d-flex justify-content-center align-items-center p-0" style="width: 100%;">Rating points update</h6>
-                      </a>
-                      <div class="rating-form" style="display: none;">
-                        {{ form }}
-                        <input type="submit" value="Submit"/>
-                      </div>
-                    </form>
-                    <script>
-                      document.addEventListener("DOMContentLoaded", function() {
-                        const ratingButton = document.querySelector(".rating-update-button");
-                        const ratingForm = document.querySelector(".rating-form");
-                        ratingButton.addEventListener("click", function(event) {
-                          event.preventDefault();
-                          ratingForm.style.display = "block";
-                        });
+          </div>
+          <div class="widget-full-width">
+            <div class="row mt-6 mb-4" style="width: 1200px">
+              <div class="col-3">
+                <div class="header mb-2 text-center">
+                  <span class="h6">{{ worker.rating_points }}</span>
+                  <span>rating points</span>
+                </div>
+                <div class="body">
+                {% if user.team == worker.team or has_common_task %}
+                  <form method="post" action="{% url 'assignment_handler:worker-detail' pk=worker.id %}">
+                    {% csrf_token %}
+                    <a class="dropdown-item py-2 ps-3 border-radius-md btn btn-danger text-white rating-update-button" href="#" style="background-color: rgba(2, 124, 199, 0.8);">
+                      <h6 class="dropdown-header font-weight-bolder d-flex justify-content-center align-items-center p-0" style="width: 100%;">Rating points update</h6>
+                    </a>
+                    <div class="rating-form" style="display: none;">
+                      {{ form }}
+                      <input type="submit" value="Submit"/>
+                    </div>
+                  </form>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                      const ratingButton = document.querySelector(".rating-update-button");
+                      const ratingForm = document.querySelector(".rating-form");
+                      ratingButton.addEventListener("click", function(event) {
+                        event.preventDefault();
+                        ratingForm.style.display = "block";
                       });
-                    </script>
-                  {% endif %}
-                  </div>
+                    });
+                  </script>
+                {% endif %}
                 </div>
               </div>
               <div class="col-2 text-center ">

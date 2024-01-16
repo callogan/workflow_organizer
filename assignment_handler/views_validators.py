@@ -5,6 +5,37 @@ from assignment_handler.validation import ValidationResult
 
 
 def validate_project_create_custom(request, form):
+    """
+    Validates proper project blocks creation on project creation.
+
+    Args:
+        request (HttpRequest): Represents the incoming HTTP request.
+            Used to extract data from the request for validation.
+        form (ProjectForm): Represents the form containing project block data.
+            Used to access and validate data entered by the user.
+
+    Checks that:
+        - at least one project block is selected;
+        - a numeric input "Total tasks" is filled for every corresponding
+            selected project block;
+        - a project block checkbox is marked when a corresponding
+            numeric input "Total tasks" is filled.
+
+    Implements the validation procedure that includes using the messages
+    framework to display a one-time notification messages in case
+    when a project block checkbox is not marked and/or a numeric input
+    is not filled.
+
+    Returns:
+        ValidationResult: A dataclass object containing validation structures.
+            - validation_map: A dictionary where keys are indices and values
+                are lists of names of all filled fields of all selected
+                project blocks – corresponded with each other separately
+                for each block;
+            - block_name_id_corp: A dictionary with indices as keys and names
+                of all selected project blocks as values – corresponded
+                with each other separately for each block.
+    """
     predefined_blocks = ProjectBlock.predefined_blocks()
     block_names = set()
     keys = []
@@ -32,7 +63,8 @@ def validate_project_create_custom(request, form):
 
     block_names = list(block_names)
 
-    # Creation of dictionary with indices and corresponding names of all entered blocks
+    # Creation of a dictionary with indices
+    # and corresponding names of all entered blocks
     block_name_id_corp = {}
 
     for block_name in block_names:
@@ -40,8 +72,8 @@ def validate_project_create_custom(request, form):
             if predefined_block["name"] == block_name:
                 block_name_id_corp[predefined_block["index"]] = block_name
 
-    # CREATION PRELIMINARY DATA FOR VALIDATION MAP
-    # Сreation a dictionary with block indices of checkboxes marked
+    # CREATION OF PRELIMINARY DATA FOR VALIDATION MAP
+    # Сreation of a dictionary with block indices of checkboxes marked
     checked_blocks = {}
     if "project_blocks" in form.data:
         value = form.data.getlist("project_blocks")
@@ -51,7 +83,7 @@ def validate_project_create_custom(request, form):
         else:
             checked_blocks["project_blocks"] = [value]
 
-    # Creation a dictionary for grouping keys with the same numbers
+    # Creation of a dictionary for grouping keys with the same numbers
     block_keys = {}
 
     for key in form.data:
@@ -95,13 +127,22 @@ def validate_project_create_custom(request, form):
         for value in checked_values:
             if isinstance(value, list):
                 for v in value:
-                    if v in validation_map and checked_key not in validation_map[v]:
+                    if (
+                        v in validation_map
+                        and checked_key not in validation_map[v]
+                    ):
                         validation_map[v].append(checked_key)
             else:
-                if value in validation_map and checked_key not in validation_map[value]:
+                if (
+                    value in validation_map
+                    and checked_key not in validation_map[value]
+                ):
                     validation_map[value].append(checked_key)
 
-    sorted_validation_map = {int(key): value for key, value in validation_map.items()}
+    sorted_validation_map = {
+        int(key): value
+        for key, value in validation_map.items()
+    }
     validation_map = dict(
         sorted(sorted_validation_map.items(), key=lambda item: item[0])
     )
@@ -112,7 +153,8 @@ def validate_project_create_custom(request, form):
 
     if not form.data.get("project_blocks"):
         initial_errors_blocks.append(
-            "It is required to select at least one project block by marking the checkbox next to its name"
+            "It is required to select at least one project block "
+            "by marking the checkbox next to its name"
         )
 
     any_tasks_filled = False
@@ -124,7 +166,8 @@ def validate_project_create_custom(request, form):
 
     if not any_tasks_filled:
         initial_errors_tasks.append(
-            'It is required to fill in the "Total tasks" field for the corresponding selected project block'
+            "It is required to fill in the \"Total tasks\" field "
+            "for the corresponding selected project block"
         )
 
     if initial_errors_blocks and initial_errors_tasks:
@@ -143,15 +186,17 @@ def validate_project_create_custom(request, form):
         for field in missing_fields:
             if field == "project_blocks":
                 message = (
-                    f"It is required to mark the checkbox next to the project block"
-                    f' "{block_name_id_corp[int(block_id)]}"'
+                    f"It is required to mark the checkbox next "
+                    f"to the project block"
+                    f" \"{block_name_id_corp[int(block_id)]}\""
                 )
                 messages.error(request, message)
             if field.startswith("block_") and field.endswith("_total_tasks"):
                 block_index = field.split("_")[1]
                 message = (
-                    f'It is required to fill in the "Total tasks" field for the project block'
-                    f' "{block_name_id_corp[int(block_index)]}"'
+                    f"It is required to fill in the \"Total tasks\" field "
+                    f"for the project block"
+                    f" \"{block_name_id_corp[int(block_index)]}\""
                 )
                 messages.error(request, message)
 
@@ -168,6 +213,28 @@ def get_expected_fields_for_create(project_id):
 
 
 def validate_project_update_structures_custom(form):
+    """
+    Creates structures (data) for validating project blocks update.
+
+    Args:
+        form (ProjectForm): Represents the form containing project block data.
+            Used to access and validate data entered by the user.
+
+    This custom function generates structures to be passed
+    to the `validate_project_update_procedure_custom` function
+    that actually validates proper editing of project blocks
+    when a project itself is being updated.
+
+    Returns:
+        ValidationResult: A dataclass object containing validation structures.
+            - validation_map: A dictionary where keys are indices and values
+                are lists of names of all filled fields of all selected
+                project blocks – corresponded with each other separately
+                for each block;
+            - block_name_id_corp: A dictionary with indices as keys and names
+                of all selected project blocks as values –
+                corresponded with each other separately for each block.
+    """
     project = form.save()
 
     all_blocks = project.projectblock_set.all()
@@ -220,7 +287,8 @@ def validate_project_update_structures_custom(form):
 
     new_block_names = list(new_block_names)
 
-    # Creation of dictionary with indices and corresponding names of all entered blocks
+    # Creation of a dictionary with indices
+    # and corresponding names of all entered blocks
     block_name_id_corp = {}
 
     for block_name in block_names:
@@ -232,7 +300,10 @@ def validate_project_update_structures_custom(form):
             total_tasks_key = f"block_{block_index}_total_tasks"
 
             if (
-                str(block_index) in form.data.get("existing_project_blocks", [])
+                str(block_index) in form.data.get(
+                    "existing_project_blocks",
+                    []
+                )
                 or form.data.get(completed_tasks_key, "") != ""
                 or form.data.get(total_tasks_key, "") != ""
             ):
@@ -243,7 +314,7 @@ def validate_project_update_structures_custom(form):
             if predefined_block["name"] == block_name:
                 block_name_id_corp[predefined_block["index"]] = block_name
 
-    # Сreation a dictionary with block indices of checkboxes marked
+    # Сreation of a dictionary with block indices of checkboxes marked
     checked_blocks = {}
     for key in ["existing_project_blocks", "new_project_blocks"]:
         if key in form.data:
@@ -254,7 +325,7 @@ def validate_project_update_structures_custom(form):
             else:
                 checked_blocks[key] = [value]
 
-    # Creation a dictionary for grouping keys with the same numbers
+    # Creation of a dictionary for grouping keys with the same numbers
     block_keys = {}
 
     for key in form.data:
@@ -299,10 +370,16 @@ def validate_project_update_structures_custom(form):
         for value in checked_values:
             if isinstance(value, list):
                 for v in value:
-                    if v in validation_map and checked_key not in validation_map[v]:
+                    if (
+                        v in validation_map
+                        and checked_key not in validation_map[v]
+                    ):
                         validation_map[v].append(checked_key)
             else:
-                if value in validation_map and checked_key not in validation_map[value]:
+                if (
+                    value in validation_map
+                    and checked_key not in validation_map[value]
+                ):
                     validation_map[value].append(checked_key)
 
     return ValidationResult(
@@ -311,6 +388,41 @@ def validate_project_update_structures_custom(form):
 
 
 def validate_project_update_procedure_custom(request, form):
+    """
+    Validates project blocks update on project update.
+
+    This custom function performs the actual validation
+    to check for proper editing of project blocks
+    when a project itself is being updated.
+
+    It accepts validation structures
+    from the `validate_project_update_structures_custom` function
+    that creates necessary validation data structures.
+
+    Args:
+        request (HttpRequest): Represents the incoming HTTP request.
+            Used to extract data from the request for validation.
+        form (ProjectForm): Represents the form containing project block data.
+            Used to access and validate data entered by the user.
+
+    Checks that:
+        - a project block checkbox is marked
+            when corresponding numeric input/inputs are filled;
+        - a numeric input "Total tasks" is filled
+            when a corresponding project block checkbox is marked
+            and/or a corresponding numeric input "Completed tasks" is filled;
+        - a numeric input "Completed tasks" is filled
+            when a corresponding project block checkbox
+            is marked and/or a corresponding numeric input "Total tasks" is filled.
+
+    Implements the validation procedure that includes
+    using the messages framework to display a one-time notification messages
+    in case when a project block checkbox is not marked
+    and/or a numeric input is not filled.
+
+    Returns:
+        messages_status as boolean value using the messages framework.
+    """
     result = validate_project_update_structures_custom(form)
 
     messages_status = False
@@ -324,8 +436,9 @@ def validate_project_update_procedure_custom(request, form):
                 if field.startswith("new_") and field.endswith("_total_tasks"):
                     block_index = field.split("_")[2]
                     message = (
-                        f'It is required to fill in the "Total tasks" field for the project block'
-                        f' "{result.block_name_id_corp[int(block_index)]}"'
+                        f"It is required to fill in the \"Total tasks\" field "
+                        f"for the project block"
+                        f" \"{result.block_name_id_corp[int(block_index)]}\""
                     )
                     existing_messages = [
                         str(msg) for msg in messages.get_messages(request)
@@ -335,8 +448,9 @@ def validate_project_update_procedure_custom(request, form):
                         messages_status = True
                 if field == "new_project_blocks":
                     message = (
-                        f"It is required to mark the checkbox next to the project block "
-                        f' "{result.block_name_id_corp[int(block_id)]}"'
+                        f"It is required to mark the checkbox next "
+                        f"to the project block"
+                        f" \"{result.block_name_id_corp[int(block_id)]}\""
                     )
                     existing_messages = [
                         str(msg) for msg in messages.get_messages(request)
@@ -350,11 +464,15 @@ def validate_project_update_procedure_custom(request, form):
             missing_fields = set(expected_fields) - set(fields)
 
             for field in missing_fields:
-                if field.startswith("block_") and field.endswith("_total_tasks"):
+                if (
+                    field.startswith("block_")
+                    and field.endswith("_total_tasks")
+                ):
                     block_index = field.split("_")[1]
                     message = (
-                        f'It is required to fill in the "Total tasks" field for the project block'
-                        f' "{result.block_name_id_corp[int(block_index)]}"'
+                        f"It is required to fill in the \"Total tasks\" field "
+                        f"for the project block"
+                        f" \"{result.block_name_id_corp[int(block_index)]}\""
                     )
                     existing_messages = [
                         str(msg) for msg in messages.get_messages(request)
@@ -362,11 +480,15 @@ def validate_project_update_procedure_custom(request, form):
                     if message not in existing_messages:
                         messages.error(request, message)
                         messages_status = True
-                if field.startswith("block_") and field.endswith("_completed_tasks"):
+                if (
+                    field.startswith("block_")
+                    and field.endswith("_completed_tasks")
+                ):
                     block_index = field.split("_")[1]
                     message = (
-                        f'It is required to fill in the "Completed tasks" field for the project block'
-                        f' "{result.block_name_id_corp[int(block_index)]}"'
+                        f"It is required to fill in the \"Completed tasks\" "
+                        f"field for the project block"
+                        f" \"{result.block_name_id_corp[int(block_index)]}\""
                     )
                     existing_messages = [
                         str(msg) for msg in messages.get_messages(request)
@@ -376,8 +498,9 @@ def validate_project_update_procedure_custom(request, form):
                         messages_status = True
                 if field == "existing_project_blocks":
                     message = (
-                        f" It is required to mark the checkbox next to the project block"
-                        f' "{result.block_name_id_corp[int(block_id)]}"'
+                        f"It is required to mark the checkbox next "
+                        f"to the project block"
+                        f" \"{result.block_name_id_corp[int(block_id)]}\""
                     )
                     existing_messages = [
                         str(msg) for msg in messages.get_messages(request)
