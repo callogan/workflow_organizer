@@ -15,7 +15,7 @@
       {% if "create" in redirect_url %}
         <a href="{% url 'assignment_handler:project-create' %}" class="btn btn-success">Go to project create page</a>
       {% else %}
-        <a href="{% url 'assignment_handler:project-update' %}" class="btn btn-primary">Go to project update page</a>
+        <a href="{{ redirect_url }}" class="btn btn-primary">Go to project update page</a>
       {% endif %}
     </div>
   </div>

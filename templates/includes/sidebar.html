@@ -96,9 +96,13 @@
                         <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center p-0">Rating status</h6>
                       </a>
                       <a class="dropdown-item py-2 ps-3 border-radius-md" href="{% url 'logout' %}">
-                        <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center p-0">
-                          <i class="fa fa-sign-out me-2" aria-hidden="true"></i>Log Out
-                        </h6>
+                        <form method="post" action="{% url 'logout' %}">
+                          {% csrf_token %}
+                          <h6 class="dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center p-0 mt-1" style="height: 12px;">
+                            <i class="fa fa-sign-out ms-3" aria-hidden="true"></i>
+                            <button type="submit" class="btn btn-link me-1" style="text-decoration: none; text-transform: capitalize; margin-bottom: 0; font-size: 14px; color: black;">Logout</button>
+                          </h6>
+                        </form>
                       </a>
                     </div>
                   </li>
