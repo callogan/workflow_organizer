@@ -34,7 +34,7 @@
                        style="transform: scale(6); border-radius: 50%; overflow: hidden; margin-top: -20px;">
                     <img class="avatar shadow-xl position-relative z-index-2"
                          style="max-width: 100%; width: 40px; height: 40px; object-fit: cover;"
-                         src="{% static 'img/team/'|add:worker.username|add:'.jpeg' %}"
+                         src="{% static 'img/workers/'|add:worker.username|add:'.jpeg' %}"
                          id="avatar-{{ worker.id }}-0"
                          onerror="placeholderAvatar(this)">
                   </div>
@@ -256,7 +256,7 @@
                                              data-bs-placement="bottom"
                                              title="{{ assignee.first_name }} {{ assignee.last_name }}">
                                             <img class="mt-n2 ms-1" style="border-radius: 50% !important; width: 40px; height: 40px; object-fit: cover; border: none;"
-                                                 src="{% static 'img/team/'|add:assignee.username|add:'.jpeg' %}"
+                                                 src="{% static 'img/workers/'|add:assignee.username|add:'.jpeg' %}"
                                                  id="avatar-{{ worker.id }}-1"
                                                  onerror="placeholderAvatar(this)">
                                           </a>
@@ -336,7 +336,7 @@
                                                data-bs-placement="bottom"
                                                title="{{ assignee.first_name }} {{ assignee.last_name }}">
                                               <img class="mt-n2 ms-1" style="border-radius: 50% !important; width: 40px; height: 40px; object-fit: cover; border: none;"
-                                                   src="{% static 'img/team/'|add:assignee.username|add:'.jpeg' %}"
+                                                   src="{% static 'img/workers/'|add:assignee.username|add:'.jpeg' %}"
                                                    id="avatar-{{ worker.id }}-2"
                                                    onerror="placeholderAvatar(this)">
                                             </a>
@@ -379,7 +379,7 @@
         </div>
         <script>
           function placeholderAvatar(img) {
-            img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+            img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
           }
         </script>
       </section>

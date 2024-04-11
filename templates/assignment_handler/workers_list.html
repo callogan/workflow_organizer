@@ -48,7 +48,7 @@
                        style="border-radius: 50%; overflow: hidden;"
                        title="{{ first_place_worker.first_name }} {{ first_place_worker.last_name }}">
                       <img class="mt-n2 ms-1" style="border-radius: 50% !important; width: 80px; height: 80px; object-fit: cover;"
-                           src="{% static 'img/team/'|add:first_place_worker.username|add:'.jpeg' %}"
+                           src="{% static 'img/workers/'|add:first_place_worker.username|add:'.jpeg' %}"
                            id="avatar-{{ worker.id }}-1"
                            onerror="placeholderAvatar(this)">
                     </a>
@@ -70,7 +70,7 @@
                        style="border-radius: 50%; overflow: hidden;"
                        title="{{ second_place_worker.first_name }} {{ second_place_worker.last_name }}">
                       <img class="mt-n2 ms-1" style="border-radius: 50% !important; width: 80px; height: 80px; object-fit: cover;"
-                           src="{% static 'img/team/'|add:second_place_worker.username|add:'.jpeg' %}"
+                           src="{% static 'img/workers/'|add:second_place_worker.username|add:'.jpeg' %}"
                            id="avatar-{{ worker.id }}-2"
                            onerror="placeholderAvatar(this)">
                     </a>
@@ -92,7 +92,7 @@
                        style="border-radius: 50%; overflow: hidden;"
                        title="{{ third_place_worker.first_name }} {{ third_place_worker.last_name }}">
                       <img class="mt-n2 ms-1" style="border-radius: 50% !important; width: 80px; height: 80px; object-fit: cover;"
-                           src="{% static 'img/team/'|add:third_place_worker.username|add:'.jpeg' %}"
+                           src="{% static 'img/workers/'|add:third_place_worker.username|add:'.jpeg' %}"
                            id="avatar-{{ worker.id }}-3"
                            onerror="placeholderAvatar(this)">
                     </a>
@@ -135,14 +135,14 @@
                           <p style="margin: 3px; display: inline;">
                             <span style="margin-right: 10px; display: inline-block;">
                                 <img class="mt-n2 ms-1" style="border-radius: 50% !important; width: 60px; height: 60px; object-fit: cover; border: none;"
-                                     src="{% static 'img/team/'|add:worker.username|add:'.jpeg' %}"
+                                     src="{% static 'img/workers/'|add:worker.username|add:'.jpeg' %}"
                                      id="avatar-{{ worker.id }}-4"
                                      onerror="placeholderAvatar(this)">
                             </span>
                           </p>
                           <script>
                             function placeholderAvatar(img) {
-                              img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+                              img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
                             }
                           </script>
                         </a>
@@ -178,7 +178,7 @@
     </div>
     <script>
       function placeholderAvatar(img) {
-        img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+        img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
       }
     </script>
   </section>

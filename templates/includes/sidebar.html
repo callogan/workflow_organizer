@@ -74,13 +74,13 @@
                     <a class="nav-link nav-link-icon me-2"
                       href="{% url 'assignment_handler:worker-detail' pk=user.id %}">
                       <img class="avatar avatar-sm my-0 rounded-circle" style="object-fit: cover;"
-                           src="{% static 'img/team/'|add:user.username|add:'.jpeg' %}"
+                           src="{% static 'img/workers/'|add:user.username|add:'.jpeg' %}"
                            id="avatar-{{ worker.id }}-0"
                            onerror="placeholderAvatar(this)">
                     </a>
                     <script>
                       function placeholderAvatar(img) {
-                        img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+                        img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
                       }
                     </script>
                   </li>

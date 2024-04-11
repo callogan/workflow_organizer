@@ -128,7 +128,7 @@
                                class="avatar avatar-sm rounded-circle"
                                data-bs-toggle="tooltip" data-bs-placement="bottom"
                                style="border-radius: 50%; overflow: hidden;">
-                              <img src="{% static 'img/team/'|add:assignee.username|add:'.jpeg' %}"
+                              <img src="{% static 'img/workers/'|add:assignee.username|add:'.jpeg' %}"
                                    id="avatar-{{ worker.id }}-1"
                                    onerror="placeholderAvatar(this)">
                             </a>
@@ -217,7 +217,7 @@
                                class="avatar avatar-sm rounded-circle"
                                data-bs-toggle="tooltip" data-bs-placement="bottom"
                                style="border-radius: 50%; overflow: hidden;">
-                              <img src="{% static 'img/team/'|add:assignee.username|add:'.jpeg' %}"
+                              <img src="{% static 'img/workers/'|add:assignee.username|add:'.jpeg' %}"
                                    id="avatar-{{ worker.id }}-2"
                                    onerror="placeholderAvatar(this)">
                             </a>
@@ -306,7 +306,7 @@
                                class="avatar avatar-sm rounded-circle"
                                data-bs-toggle="tooltip" data-bs-placement="bottom"
                                style="border-radius: 50%; overflow: hidden;">
-                              <img src="{% static 'img/team/'|add:assignee.username|add:'.jpeg' %}"
+                              <img src="{% static 'img/workers/'|add:assignee.username|add:'.jpeg' %}"
                                    id="avatar-{{ worker.id }}-3"
                                    onerror="placeholderAvatar(this)">
                             </a>
@@ -342,7 +342,7 @@
     </div>
     <script>
       function placeholderAvatar(img) {
-        img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+        img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
       }
     </script>
   </section>

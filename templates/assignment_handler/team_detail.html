@@ -42,13 +42,13 @@
                         <div class="p-3 pe-md-0">
                           <img
                               class="mt-n2 ms-1" style="border-radius: 50% !important; width: 200px; height: 200px; object-fit: cover; border: none;"
-                              src="{% static 'img/team/'|add:worker.username|add:'.jpeg' %}"
+                              src="{% static 'img/workers/'|add:worker.username|add:'.jpeg' %}"
                               id="avatar-{{ worker.id }}"
                               onerror="placeholderAvatar(this)">
                         </div>
                         <script>
                           function placeholderAvatar(img) {
-                            img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+                            img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
                           }
                         </script>
                       </a>

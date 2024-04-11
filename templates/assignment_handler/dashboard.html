@@ -174,7 +174,7 @@
                                      data-bs-toggle="tooltip"
                                      data-bs-placement="bottom"
                                      title="{{ worker.first_name }} {{ worker.last_name }}">
-                                    <img src="{% static 'img/team/'|add:worker.username|add:'.jpeg' %}" alt="{{ team.name }}"
+                                    <img src="{% static 'img/workers/'|add:worker.username|add:'.jpeg' %}" alt="{{ team.name }}"
                                          id="avatar-{{ worker.id }}"
                                          onerror="placeholderAvatar(this)">
                                   </a>
@@ -216,7 +216,7 @@
     </div>
     <script>
       function placeholderAvatar(img) {
-        img.src = "{% static 'img/team/avatar-placeholder.jpeg' %}";
+        img.src = "{% static 'img/workers/avatar-placeholder.jpeg' %}";
       }
     </script>
   </section>
