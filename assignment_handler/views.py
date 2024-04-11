@@ -118,6 +118,18 @@ class WorkerDetailView(LoginRequiredMixin, generic.DetailView):
         context = super().get_context_data(**kwargs)
         worker = self.get_object()
 
+        form = WorkerEvaluationForm()
+        last_evaluation = WorkerEvaluation.objects.filter(
+            evaluator=self.request.user, worker=worker
+        )
+
+        if last_evaluation:
+            last_evaluation = last_evaluation[0]
+            form.fields["score"].initial = last_evaluation.score
+
+        context["form"] = form
+        context["worker"] = worker
+
         user_assignees = Task.objects.filter(assignees=self.request.user)
         worker_assignees = Task.objects.filter(assignees=worker)
 
