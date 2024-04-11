@@ -1,1904 +1,1738 @@
 [
-  {
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-      "action_time": "2023-11-26T14:56:09.917Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "1",
-      "object_repr": "Frontrunners",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-04-09T11:00:42.655Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "marshall (Alfred Marshall)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-04-09T13:33:49.777Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "1",
+            "object_repr": "Developer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-04-09T13:34:25.046Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "2",
+            "object_repr": "Designer",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-04-09T13:34:54.972Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "3",
+            "object_repr": "Architect",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-04-09T13:35:24.612Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "4",
+            "object_repr": "Project manager",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-04-09T13:45:17.785Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "Impetuous",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-04-09T13:45:34.323Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "Peacekeepers",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-04-09T13:45:53.453Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "Frontrunners",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-04-09T13:48:53.687Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "bug",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2024-04-09T13:49:23.708Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "maintenance",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2024-04-09T13:49:50.100Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "enhancement",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2024-04-09T13:51:53.842Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "UI login page error troubleshooting (priority: U)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2024-04-09T14:03:25.009Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "jevons ( )",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2024-04-09T14:04:09.575Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "jevons (William Jevons)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2024-04-09T14:04:48.105Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "marshall (Alfred Marshall)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Position\", \"Teams\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2024-04-09T14:06:11.768Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "allen ( )",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2024-04-09T14:06:50.481Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "allen (Robert Allen)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2024-04-09T14:07:54.632Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "hotelling ( )",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2024-04-09T14:08:26.135Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "hotelling (Harold Hotelling)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2024-04-09T14:12:34.144Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "2",
+            "object_repr": "Apply security patches (priority: U)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2024-04-09T14:13:53.489Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "3",
+            "object_repr": "Improve the website's search functionality (priority: S)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2024-04-09T14:15:41.380Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "software-development",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2024-04-09T14:16:14.593Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "collaboration/productivity",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2024-04-09T14:18:48.780Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "Customer mobile account management application development",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2024-04-09T14:19:20.216Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "software development",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2024-04-09T14:21:02.010Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "Unified communications platform implementation",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2024-04-09T14:22:10.719Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "Project name: Customer mobile account management application development (project block: Frontend development)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2024-04-09T14:22:43.558Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "Project name: Customer mobile account management application development (project block: Backend development)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2024-04-09T14:23:13.358Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "Project name: Customer mobile account management application development (project block: Database/data layer)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2024-04-09T14:23:41.348Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "Project name: Customer mobile account management application development (project block: Documentation)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2024-04-09T14:24:27.255Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "5",
+            "object_repr": "Project name: Customer mobile account management application development (project block: UX/design)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2024-04-09T14:27:27.309Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "Project name: Unified communications platform implementation (project block: Frontend development)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2024-04-09T14:28:03.130Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "7",
+            "object_repr": "Project name: Unified communications platform implementation (project block: Backend development)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2024-04-09T14:28:29.656Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "8",
+            "object_repr": "Project name: Unified communications platform implementation (project block: Documentation)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2024-04-09T14:28:59.168Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "9",
+            "object_repr": "Project name: Unified communications platform implementation (project block: Infrastructure setup)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2024-04-09T14:41:24.387Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "1",
+            "object_repr": "WorkerEvaluation object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2024-04-09T14:41:25.067Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "2",
+            "object_repr": "WorkerEvaluation object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2024-04-09T14:41:59.783Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "2",
+            "object_repr": "WorkerEvaluation object (2)",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add position",
+            "content_type": 6,
+            "codename": "add_position"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change position",
+            "content_type": 6,
+            "codename": "change_position"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete position",
+            "content_type": 6,
+            "codename": "delete_position"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view position",
+            "content_type": 6,
+            "codename": "view_position"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add project category",
+            "content_type": 7,
+            "codename": "add_projectcategory"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change project category",
+            "content_type": 7,
+            "codename": "change_projectcategory"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete project category",
+            "content_type": 7,
+            "codename": "delete_projectcategory"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view project category",
+            "content_type": 7,
+            "codename": "view_projectcategory"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add task type",
+            "content_type": 8,
+            "codename": "add_tasktype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change task type",
+            "content_type": 8,
+            "codename": "change_tasktype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete task type",
+            "content_type": 8,
+            "codename": "delete_tasktype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view task type",
+            "content_type": 8,
+            "codename": "view_tasktype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add team",
+            "content_type": 9,
+            "codename": "add_team"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change team",
+            "content_type": 9,
+            "codename": "change_team"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete team",
+            "content_type": 9,
+            "codename": "delete_team"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view team",
+            "content_type": 9,
+            "codename": "view_team"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 10,
+            "codename": "add_worker"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 10,
+            "codename": "change_worker"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 10,
+            "codename": "delete_worker"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 10,
+            "codename": "view_worker"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add project",
+            "content_type": 11,
+            "codename": "add_project"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change project",
+            "content_type": 11,
+            "codename": "change_project"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete project",
+            "content_type": 11,
+            "codename": "delete_project"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view project",
+            "content_type": 11,
+            "codename": "view_project"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add project block",
+            "content_type": 12,
+            "codename": "add_projectblock"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change project block",
+            "content_type": 12,
+            "codename": "change_projectblock"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete project block",
+            "content_type": 12,
+            "codename": "delete_projectblock"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view project block",
+            "content_type": 12,
+            "codename": "view_projectblock"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add task",
+            "content_type": 13,
+            "codename": "add_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change task",
+            "content_type": 13,
+            "codename": "change_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete task",
+            "content_type": 13,
+            "codename": "delete_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view task",
+            "content_type": 13,
+            "codename": "view_task"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add worker evaluation",
+            "content_type": 14,
+            "codename": "add_workerevaluation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change worker evaluation",
+            "content_type": 14,
+            "codename": "change_workerevaluation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete worker evaluation",
+            "content_type": 14,
+            "codename": "delete_workerevaluation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view worker evaluation",
+            "content_type": 14,
+            "codename": "view_workerevaluation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add tag",
+            "content_type": 15,
+            "codename": "add_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change tag",
+            "content_type": 15,
+            "codename": "change_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete tag",
+            "content_type": 15,
+            "codename": "delete_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view tag",
+            "content_type": 15,
+            "codename": "view_tag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add tagged item",
+            "content_type": 16,
+            "codename": "add_taggeditem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change tagged item",
+            "content_type": 16,
+            "codename": "change_taggeditem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete tagged item",
+            "content_type": 16,
+            "codename": "delete_taggeditem"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view tagged item",
+            "content_type": 16,
+            "codename": "view_taggeditem"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "3ics1s5iu7015t2d1zlfrctxco724uhb",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyGFZUE8evcbCCyLVA1NSnsy_rsh6UFPk8x7M28R4r7VsHdew5zFRShx-u1SpCe3AfIjtvsiaWnbOic5FHnQLm9L5tf1cP8Oaux1rBXrAtklQgbFDo1FwKIn9lqDP2MGTVQK2JisA49K0YTJeDNCsfh8AduYN20:1ruBaS:26izljZi2Zy7Zne24Wo-k3FGrY1EW8KD4l77_H7w-FQ",
+            "expire_date": "2024-04-23T13:32:32.156Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "7fbfpkn7swzt8vn2gcsscllhsxl86944",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyGFZUE8evcbCCyLVA1NSnsy_rsh6UFPk8x7M28R4r7VsHdew5zFRShx-u1SpCe3AfIjtvsiaWnbOic5FHnQLm9L5tf1cP8Oaux1rBXrAtklQgbFDo1FwKIn9lqDP2MGTVQK2JisA49K0YTJeDNCsfh8AduYN20:1ruCei:F-JovfDDJKtRIj21z0Jcbmf0NWPPbn2e64V0K3ZapbM",
+            "expire_date": "2024-04-23T14:41:00.874Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "c8fxvrjo5y9050p4xfgq2v07iig0n688",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyGFZUE8evcbCCyLVA1NSnsy_rsh6UFPk8x7M28R4r7VsHdew5zFRShx-u1SpCe3AfIjtvsiaWnbOic5FHnQLm9L5tf1cP8Oaux1rBXrAtklQgbFDo1FwKIn9lqDP2MGTVQK2JisA49K0YTJeDNCsfh8AduYN20:1ruCeh:pQoHN6WntYR-DpoukyuLzDkPGj_x7sHdeGBxwtAfjeI",
+            "expire_date": "2024-04-23T14:40:59.436Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "p31icq3jjavv4vh3hjnpg6zn738sz3zi",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyGFZUE8evcbCCyLVA1NSnsy_rsh6UFPk8x7M28R4r7VsHdew5zFRShx-u1SpCe3AfIjtvsiaWnbOic5FHnQLm9L5tf1cP8Oaux1rBXrAtklQgbFDo1FwKIn9lqDP2MGTVQK2JisA49K0YTJeDNCsfh8AduYN20:1ruAtM:VSmZjN6S0-ntPQwYGZEgMnvN0_A5L3TWIto47yaTuiI",
+            "expire_date": "2024-04-23T12:48:00.439Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "uefwn78b40oll69ytdfut00t6zbqhv8b",
+        "fields": {
+            "session_data": ".eJxVjMEOwiAQRP-FsyGFZUE8evcbCCyLVA1NSnsy_rsh6UFPk8x7M28R4r7VsHdew5zFRShx-u1SpCe3AfIjtvsiaWnbOic5FHnQLm9L5tf1cP8Oaux1rBXrAtklQgbFDo1FwKIn9lqDP2MGTVQK2JisA49K0YTJeDNCsfh8AduYN20:1ru9C7:2rjAGOW8s-akea2wTzfpYuvbIKbrfZ0NK7E7AhU1bsQ",
+            "expire_date": "2024-04-23T10:59:15.802Z"
+        }
+    },
+    {
+        "model": "assignment_handler.position",
+        "pk": 1,
+        "fields": {
+            "name": "Developer",
+            "duties": "Collaborate with developers to create algorithms and flowcharts; \r\nGenerate streamlined and effective code in accordance with given requirements; \r\nIncorporate software elements and third-party applications; \r\nValidate and launch software and systems; \r\nDiagnose, rectify, and enhance pre-existing software;"
+        }
+    },
+    {
+        "model": "assignment_handler.position",
+        "pk": 2,
+        "fields": {
+            "name": "Designer",
+            "duties": "Analyzing pertinent information and materials to shape conceptual plans; \r\nCreating sample art arrangements and seeking approval;\r\nGenerating finalized artwork using essential equipment and software; \r\nCollaborating with external agencies and peers as needed; \r\nEngaging in discussions with clients regarding layout and design;"
+        }
+    },
+    {
+        "model": "assignment_handler.position",
+        "pk": 3,
+        "fields": {
+            "name": "Architect",
+            "duties": "Develop blueprints, technical drawings and architectural designs for software systems and IT infrastructure;\r\nAnalyze requirements and create technical specifications to guide development teams; \r\nEnsure technical solutions meet quality, security and scalability needs; \r\nOversee and approve selection of frameworks, tools and platforms for projects; \r\nConduct reviews, inspections and walkthroughs to enforce architectural principles; \r\nBuild and communicate guidelines, policies and standards for technology implementations;"
+        }
+    },
+    {
+        "model": "assignment_handler.position",
+        "pk": 4,
+        "fields": {
+            "name": "Project manager",
+            "duties": "Strategize and effectuate projects;\r\nAid in outlining the project's objectives, scope, and deliverables;\r\nSpecify necessary tasks and resources;\r\nAssemble and oversee the project team;\r\nOversee the project's financial resources;\r\nControl over time constraints;"
+        }
+    },
+    {
+        "model": "assignment_handler.team",
+        "pk": 1,
+        "fields": {
+            "name": "Impetuous"
+        }
+    },
+    {
+        "model": "assignment_handler.team",
+        "pk": 2,
+        "fields": {
+            "name": "Peacekeepers"
+        }
+    },
+    {
+        "model": "assignment_handler.team",
+        "pk": 3,
+        "fields": {
+            "name": "Frontrunners"
+        }
+    },
+    {
+        "model": "assignment_handler.worker",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$H231ul31rd1lnkb6BqCNc8$k4n6Ycd7bc+0wQhQz84/7WeFXME6wkD5n20+5FzAYLc=",
+            "last_login": "2024-04-09T14:41:00.866Z",
+            "is_superuser": true,
+            "username": "marshall",
+            "first_name": "Alfred",
+            "last_name": "Marshall",
+            "email": "marshall@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-04-09T10:58:46Z",
+            "position": 1,
+            "rating_points": 0,
+            "groups": [],
+            "user_permissions": [],
+            "teams": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "assignment_handler.worker",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$kVC2CilNIirkv3novVWdoh$a90Tu/RDE5M24btIR+GhCNg3iXForJsF3uVapPFHEaY=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "jevons",
+            "first_name": "William",
+            "last_name": "Jevons",
+            "email": "jevons@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-04-09T14:03:23Z",
+            "position": 2,
+            "rating_points": 0,
+            "groups": [],
+            "user_permissions": [],
+            "teams": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "assignment_handler.worker",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$fA8VHTyBCSbhE1kai1ZRR1$LUwtjdqOdGsoI9LvzGOncsOf2mxM45/boiDAMRZzaDo=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "allen",
+            "first_name": "Robert",
+            "last_name": "Allen",
+            "email": "allen@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-04-09T14:06:10Z",
+            "position": 2,
+            "rating_points": 0,
+            "groups": [],
+            "user_permissions": [],
+            "teams": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "assignment_handler.worker",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$720000$2GFWhZdRGP2wPKMYoAkPIb$nYB+/u9Ls8AFAhy6lMGGfHYe1+AVCz4/96zodCfaVek=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "hotelling",
+            "first_name": "Harold",
+            "last_name": "Hotelling",
+            "email": "hotelling@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-04-09T14:07:53Z",
+            "position": 4,
+            "rating_points": 0,
+            "groups": [],
+            "user_permissions": [],
+            "teams": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "assignment_handler.workerevaluation",
+        "pk": 1,
+        "fields": {
+            "evaluator": 1,
+            "worker": 2,
+            "score": 3
+        }
+    },
+    {
+        "model": "assignment_handler.projectcategory",
+        "pk": 1,
+        "fields": {
+            "name": "software development",
+            "depiction": "Projects centered on building, purchasing, and deploying software solutions to support business operations, customer needs, and internal user productivity. Can include custom mobile/web/desktop application development, integration between systems, implementation of third-party software packages, legacy modernization, and application upgrades."
+        }
+    },
+    {
+        "model": "assignment_handler.projectcategory",
+        "pk": 2,
+        "fields": {
+            "name": "collaboration/productivity",
+            "depiction": "Implementing new systems and tools for communication, collaboration, content/document management, scheduling, and project management. This improves workforce connectivity, alignment, and productivity. Example projects: enterprise social networks, instant messaging, Office 365 deployment, SharePoint portals, project management systems."
+        }
+    },
+    {
+        "model": "assignment_handler.project",
+        "pk": 1,
+        "fields": {
+            "name": "Customer mobile account management application development",
+            "depiction": "This project focuses on building a new customer-facing mobile app that allows users to access their account, get account balances, make payments, and manage account preferences anytime from their mobile device. The scope includes developing the front-end mobile application for both iOS and Android platforms, integrating with back-end account management systems via APIs, building a responsive web version for accessibility, ensuring security controls are designed into the application, load testing and performance tuning, and releasing a production version for download in the app stores after thorough quality assurance testing. Post-launch, the app will be enhanced over time to add new capabilities based on customer feedback and usage analytics. The goal is to provide customers a convenient, user-friendly, and secure way to manage their account on-the-go and resolve common service needs without calling the contact center.",
+            "priority": "S",
+            "time_constraints": "2026-06-14",
+            "project_category": 1,
+            "team": 3,
+            "budget": "48000.00",
+            "funds_used": "14000.00"
+        }
+    },
+    {
+        "model": "assignment_handler.project",
+        "pk": 2,
+        "fields": {
+            "name": "Unified communications platform implementation",
+            "depiction": "This project will implement a new Unified Communications platform consisting of instant messaging, voice, video conferencing, and screen sharing capabilities. It will replace the current fragmented collaboration tools with a single integrated platform to improve workforce connectivity and collaboration. The project will roll out the new UC software across the organization, migrate users from legacy systems, integrate the software with Active Directory for authentication, implement audio/video equipment in conference rooms, train employees on new conferencing and collaboration features, and establish governance policies around usage. Once fully deployed, the UC platform aims to increase workforce productivity by streamlining communication channels, facilitating remote meetings, and enabling collaboration across dispersed teams and offices. Adoption will be measured through usage analytics and surveys. Ongoing maintenance and user support will be provided by the IT service desk.",
+            "priority": "U",
+            "time_constraints": "2025-12-16",
+            "project_category": 2,
+            "team": 3,
+            "budget": "30000.00",
+            "funds_used": "12000.00"
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 1,
+        "fields": {
+            "project": 1,
+            "name": "Frontend development",
+            "depiction": "Functional block",
+            "total_tasks": 12,
+            "completed_tasks": 6
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 2,
+        "fields": {
+            "project": 1,
+            "name": "Backend development",
+            "depiction": "Functional block",
+            "total_tasks": 16,
+            "completed_tasks": 4
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 3,
+        "fields": {
+            "project": 1,
+            "name": "Database/data layer",
+            "depiction": "Functional block",
+            "total_tasks": 14,
+            "completed_tasks": 8
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 4,
+        "fields": {
+            "project": 1,
+            "name": "Documentation",
+            "depiction": "Functional block",
+            "total_tasks": 10,
+            "completed_tasks": 8
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 5,
+        "fields": {
+            "project": 1,
+            "name": "UX/design",
+            "depiction": "Functional block",
+            "total_tasks": 8,
+            "completed_tasks": 5
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 6,
+        "fields": {
+            "project": 2,
+            "name": "Frontend development",
+            "depiction": "Functional block",
+            "total_tasks": 17,
+            "completed_tasks": 17
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 7,
+        "fields": {
+            "project": 2,
+            "name": "Backend development",
+            "depiction": "Functional block",
+            "total_tasks": 18,
+            "completed_tasks": 18
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 8,
+        "fields": {
+            "project": 2,
+            "name": "Documentation",
+            "depiction": "Functional block",
+            "total_tasks": 10,
+            "completed_tasks": 8
+        }
+    },
+    {
+        "model": "assignment_handler.projectblock",
+        "pk": 9,
+        "fields": {
+            "project": 2,
+            "name": "Infrastructure setup",
+            "depiction": "Functional block",
+            "total_tasks": 23,
+            "completed_tasks": 23
+        }
+    },
+    {
+        "model": "assignment_handler.tasktype",
+        "pk": 1,
+        "fields": {
+            "name": "bug",
+            "depiction": "Software bugs are problems in the design, building, or use of computer programs that lead to incorrect or surprising results. The process of identifying and fixing these issues is called debugging. Debugging often uses formal methods or tools to pinpoint the exact causes of bugs. Since the middle of the last century, some computer systems have included features to forestall, detect, or automatically fix various bugs while the software is running. The overall meaning remains the same - software bugs are errors that need to be found and corrected, and debugging is an important part of software development and maintenance."
+        }
+    },
+    {
+        "model": "assignment_handler.tasktype",
+        "pk": 2,
+        "fields": {
+            "name": "maintenance",
+            "depiction": "Maintenance tasks involve the ongoing activities necessary to keep systems, equipment, or infrastructure in proper working condition. This can include routine inspections, repairs, updates, and replacements of components to prevent deterioration or malfunctions. Maintenance tasks are essential to extend the lifespan and ensure the continued reliability of assets, reducing the likelihood of unexpected failures and downtime."
+        }
+    },
+    {
+        "model": "assignment_handler.tasktype",
+        "pk": 3,
+        "fields": {
+            "name": "enhancement",
+            "depiction": "Enhancement refers to a substantial improvement or service offering that includes significant supplemental capabilities, as concluded exclusively on the corporate level and as designated in an Order Form."
+        }
+    },
+    {
+        "model": "assignment_handler.task",
+        "pk": 1,
+        "fields": {
+            "name": "UI login page error troubleshooting",
+            "depiction": "Investigate and fix the bug where users are unable to log in due to a JavaScript error on the login page. This involves identifying the root cause, modifying the code to resolve the issue, and thoroughly testing to ensure the problem is completely resolved and users can log in seamlessly.",
+            "time_constraints": "2025-07-24",
+            "is_completed": false,
+            "priority": "U",
+            "task_type": 1,
+            "assignees": []
+        }
+    },
+    {
+        "model": "assignment_handler.task",
+        "pk": 2,
+        "fields": {
+            "name": "Apply security patches",
+            "depiction": "Regularly update and maintain the system by applying security patches, addressing vulnerabilities, and ensuring the software's security. This task focuses on identifying and patching vulnerabilities that could potentially be exploited, keeping the system secure and up to date.",
+            "time_constraints": "2025-04-12",
+            "is_completed": false,
+            "priority": "U",
+            "task_type": 2,
+            "assignees": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "assignment_handler.task",
+        "pk": 3,
+        "fields": {
+            "name": "Improve the website's search functionality",
+            "depiction": "The goal of this task is to improve the website's search functionality in order to provide more relevant results for users. This will involve implementing partial word matching and synonym support within the search algorithm to expand the capabilities beyond exact keyword searches. Additional efforts will focus on optimizing the search index to incorporate new site content, adding filter/faceted search by attributes like product category and date, and improving the ranking of results by analyzing word frequency. Other planned enhancements are expanding search to include related documents and media, adding autocomplete suggestions and search keywords in the results page UI, implementing search usage tracking to guide future optimizations, and performing thorough search quality testing to measure improvements in relevance. Overall, this enhancement encompasses upgrades to the core search algorithm, index, UI, and analytics to make search on the website more powerful and effective for finding relevant content.",
+            "time_constraints": "2025-03-07",
+            "is_completed": false,
+            "priority": "S",
+            "task_type": 3,
+            "assignees": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 1,
+        "fields": {
+            "name": "deployment",
+            "slug": "deployment"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 2,
+        "fields": {
+            "name": "optimization",
+            "slug": "optimization"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 3,
+        "fields": {
+            "name": "developing",
+            "slug": "developing"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 4,
+        "fields": {
+            "name": "testing",
+            "slug": "testing"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 5,
+        "fields": {
+            "name": "security",
+            "slug": "security"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 6,
+        "fields": {
+            "name": "adaptive-layout",
+            "slug": "adaptive-layout"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 7,
+        "fields": {
+            "name": "python-niche",
+            "slug": "python-niche"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 8,
+        "fields": {
+            "name": "multi-tech",
+            "slug": "multi-tech"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 9,
+        "fields": {
+            "name": "cross-func",
+            "slug": "cross-func"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 10,
+        "fields": {
+            "name": "composite-it",
+            "slug": "composite-it"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 11,
+        "fields": {
+            "name": "inter-sys",
+            "slug": "inter-sys"
+        }
+    },
+    {
+        "model": "taggit.tag",
+        "pk": 12,
+        "fields": {
+            "name": "cross-dept",
+            "slug": "cross-dept"
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 1,
+        "fields": {
+            "tag": 1,
+            "content_type": 13,
+            "object_id": 1
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 2,
+        "fields": {
+            "tag": 2,
+            "content_type": 13,
+            "object_id": 1
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 3,
+        "fields": {
+            "tag": 3,
+            "content_type": 13,
+            "object_id": 1
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 4,
+        "fields": {
+            "tag": 4,
+            "content_type": 13,
+            "object_id": 1
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 5,
+        "fields": {
+            "tag": 1,
+            "content_type": 13,
+            "object_id": 2
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 6,
+        "fields": {
+            "tag": 3,
+            "content_type": 13,
+            "object_id": 2
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 7,
+        "fields": {
+            "tag": 4,
+            "content_type": 13,
+            "object_id": 2
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 8,
+        "fields": {
+            "tag": 5,
+            "content_type": 13,
+            "object_id": 2
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 9,
+        "fields": {
+            "tag": 2,
+            "content_type": 13,
+            "object_id": 3
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 10,
+        "fields": {
+            "tag": 3,
+            "content_type": 13,
+            "object_id": 3
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 11,
+        "fields": {
+            "tag": 4,
+            "content_type": 13,
+            "object_id": 3
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 12,
+        "fields": {
+            "tag": 6,
+            "content_type": 13,
+            "object_id": 3
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 13,
+        "fields": {
+            "tag": 7,
+            "content_type": 13,
+            "object_id": 3
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 14,
+        "fields": {
+            "tag": 8,
+            "content_type": 11,
+            "object_id": 1
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 15,
+        "fields": {
+            "tag": 9,
+            "content_type": 11,
+            "object_id": 1
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 16,
+        "fields": {
+            "tag": 10,
+            "content_type": 11,
+            "object_id": 2
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 17,
+        "fields": {
+            "tag": 11,
+            "content_type": 11,
+            "object_id": 2
+        }
+    },
+    {
+        "model": "taggit.taggeditem",
+        "pk": 18,
+        "fields": {
+            "tag": 12,
+            "content_type": 11,
+            "object_id": 2
+        }
     }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-      "action_time": "2023-11-26T14:56:23.383Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "2",
-      "object_repr": "Peacekeepers",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-      "action_time": "2023-11-26T14:56:40.651Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "3",
-      "object_repr": "Impetuous",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-      "action_time": "2023-11-26T14:58:06.181Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "1",
-      "object_repr": "Developer",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-      "action_time": "2023-11-26T15:06:22.896Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "1",
-      "object_repr": "Developer",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Duties\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-      "action_time": "2023-11-26T15:07:54.127Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "Designer",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-      "action_time": "2023-11-26T15:09:25.460Z",
-      "user": 1,
-      "content_type": 7,
-      "object_id": "3",
-      "object_repr": "System analyst",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-      "action_time": "2023-11-26T15:33:32.880Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "1",
-      "object_repr": "bug",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-      "action_time": "2023-11-26T15:34:42.028Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "2",
-      "object_repr": "maintenance",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-      "action_time": "2023-11-26T15:35:22.054Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "3",
-      "object_repr": "enhancement",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-      "action_time": "2023-11-26T15:36:01.322Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "4",
-      "object_repr": "testing",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-      "action_time": "2023-11-26T15:36:45.604Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "5",
-      "object_repr": "optimization",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 13,
-    "fields": {
-      "action_time": "2023-11-26T16:39:02.829Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "1",
-      "object_repr": "software development",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 14,
-    "fields": {
-      "action_time": "2023-11-26T16:40:15.290Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "2",
-      "object_repr": "collaboration/productivity",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 15,
-    "fields": {
-      "action_time": "2023-11-26T16:40:58.860Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "3",
-      "object_repr": "infrastructure/networking",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 1,
-    "fields": {
-      "name": "Can add log entry",
-      "content_type": 1,
-      "codename": "add_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 2,
-    "fields": {
-      "name": "Can change log entry",
-      "content_type": 1,
-      "codename": "change_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 3,
-    "fields": {
-      "name": "Can delete log entry",
-      "content_type": 1,
-      "codename": "delete_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 4,
-    "fields": {
-      "name": "Can view log entry",
-      "content_type": 1,
-      "codename": "view_logentry"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 5,
-    "fields": {
-      "name": "Can add permission",
-      "content_type": 2,
-      "codename": "add_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 6,
-    "fields": {
-      "name": "Can change permission",
-      "content_type": 2,
-      "codename": "change_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 7,
-    "fields": {
-      "name": "Can delete permission",
-      "content_type": 2,
-      "codename": "delete_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 8,
-    "fields": {
-      "name": "Can view permission",
-      "content_type": 2,
-      "codename": "view_permission"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 9,
-    "fields": {
-      "name": "Can add group",
-      "content_type": 3,
-      "codename": "add_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 10,
-    "fields": {
-      "name": "Can change group",
-      "content_type": 3,
-      "codename": "change_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 11,
-    "fields": {
-      "name": "Can delete group",
-      "content_type": 3,
-      "codename": "delete_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 12,
-    "fields": {
-      "name": "Can view group",
-      "content_type": 3,
-      "codename": "view_group"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 13,
-    "fields": {
-      "name": "Can add content type",
-      "content_type": 4,
-      "codename": "add_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 14,
-    "fields": {
-      "name": "Can change content type",
-      "content_type": 4,
-      "codename": "change_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 15,
-    "fields": {
-      "name": "Can delete content type",
-      "content_type": 4,
-      "codename": "delete_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 16,
-    "fields": {
-      "name": "Can view content type",
-      "content_type": 4,
-      "codename": "view_contenttype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 17,
-    "fields": {
-      "name": "Can add session",
-      "content_type": 5,
-      "codename": "add_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 18,
-    "fields": {
-      "name": "Can change session",
-      "content_type": 5,
-      "codename": "change_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 19,
-    "fields": {
-      "name": "Can delete session",
-      "content_type": 5,
-      "codename": "delete_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 20,
-    "fields": {
-      "name": "Can view session",
-      "content_type": 5,
-      "codename": "view_session"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 21,
-    "fields": {
-      "name": "Can add user",
-      "content_type": 6,
-      "codename": "add_worker"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 22,
-    "fields": {
-      "name": "Can change user",
-      "content_type": 6,
-      "codename": "change_worker"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 23,
-    "fields": {
-      "name": "Can delete user",
-      "content_type": 6,
-      "codename": "delete_worker"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 24,
-    "fields": {
-      "name": "Can view user",
-      "content_type": 6,
-      "codename": "view_worker"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 25,
-    "fields": {
-      "name": "Can add position",
-      "content_type": 7,
-      "codename": "add_position"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 26,
-    "fields": {
-      "name": "Can change position",
-      "content_type": 7,
-      "codename": "change_position"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 27,
-    "fields": {
-      "name": "Can delete position",
-      "content_type": 7,
-      "codename": "delete_position"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 28,
-    "fields": {
-      "name": "Can view position",
-      "content_type": 7,
-      "codename": "view_position"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 29,
-    "fields": {
-      "name": "Can add project",
-      "content_type": 8,
-      "codename": "add_project"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 30,
-    "fields": {
-      "name": "Can change project",
-      "content_type": 8,
-      "codename": "change_project"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 31,
-    "fields": {
-      "name": "Can delete project",
-      "content_type": 8,
-      "codename": "delete_project"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 32,
-    "fields": {
-      "name": "Can view project",
-      "content_type": 8,
-      "codename": "view_project"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 33,
-    "fields": {
-      "name": "Can add project category",
-      "content_type": 9,
-      "codename": "add_projectcategory"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 34,
-    "fields": {
-      "name": "Can change project category",
-      "content_type": 9,
-      "codename": "change_projectcategory"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 35,
-    "fields": {
-      "name": "Can delete project category",
-      "content_type": 9,
-      "codename": "delete_projectcategory"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 36,
-    "fields": {
-      "name": "Can view project category",
-      "content_type": 9,
-      "codename": "view_projectcategory"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 37,
-    "fields": {
-      "name": "Can add task type",
-      "content_type": 10,
-      "codename": "add_tasktype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 38,
-    "fields": {
-      "name": "Can change task type",
-      "content_type": 10,
-      "codename": "change_tasktype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 39,
-    "fields": {
-      "name": "Can delete task type",
-      "content_type": 10,
-      "codename": "delete_tasktype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 40,
-    "fields": {
-      "name": "Can view task type",
-      "content_type": 10,
-      "codename": "view_tasktype"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 41,
-    "fields": {
-      "name": "Can add team",
-      "content_type": 11,
-      "codename": "add_team"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 42,
-    "fields": {
-      "name": "Can change team",
-      "content_type": 11,
-      "codename": "change_team"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 43,
-    "fields": {
-      "name": "Can delete team",
-      "content_type": 11,
-      "codename": "delete_team"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 44,
-    "fields": {
-      "name": "Can view team",
-      "content_type": 11,
-      "codename": "view_team"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 45,
-    "fields": {
-      "name": "Can add worker evaluation",
-      "content_type": 12,
-      "codename": "add_workerevaluation"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 46,
-    "fields": {
-      "name": "Can change worker evaluation",
-      "content_type": 12,
-      "codename": "change_workerevaluation"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 47,
-    "fields": {
-      "name": "Can delete worker evaluation",
-      "content_type": 12,
-      "codename": "delete_workerevaluation"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 48,
-    "fields": {
-      "name": "Can view worker evaluation",
-      "content_type": 12,
-      "codename": "view_workerevaluation"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 49,
-    "fields": {
-      "name": "Can add task",
-      "content_type": 13,
-      "codename": "add_task"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 50,
-    "fields": {
-      "name": "Can change task",
-      "content_type": 13,
-      "codename": "change_task"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 51,
-    "fields": {
-      "name": "Can delete task",
-      "content_type": 13,
-      "codename": "delete_task"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 52,
-    "fields": {
-      "name": "Can view task",
-      "content_type": 13,
-      "codename": "view_task"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 53,
-    "fields": {
-      "name": "Can add project block",
-      "content_type": 14,
-      "codename": "add_projectblock"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 54,
-    "fields": {
-      "name": "Can change project block",
-      "content_type": 14,
-      "codename": "change_projectblock"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 55,
-    "fields": {
-      "name": "Can delete project block",
-      "content_type": 14,
-      "codename": "delete_projectblock"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 56,
-    "fields": {
-      "name": "Can view project block",
-      "content_type": 14,
-      "codename": "view_projectblock"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 57,
-    "fields": {
-      "name": "Can add tag",
-      "content_type": 15,
-      "codename": "add_tag"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 58,
-    "fields": {
-      "name": "Can change tag",
-      "content_type": 15,
-      "codename": "change_tag"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 59,
-    "fields": {
-      "name": "Can delete tag",
-      "content_type": 15,
-      "codename": "delete_tag"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 60,
-    "fields": {
-      "name": "Can view tag",
-      "content_type": 15,
-      "codename": "view_tag"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 61,
-    "fields": {
-      "name": "Can add tagged item",
-      "content_type": 16,
-      "codename": "add_taggeditem"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 62,
-    "fields": {
-      "name": "Can change tagged item",
-      "content_type": 16,
-      "codename": "change_taggeditem"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 63,
-    "fields": {
-      "name": "Can delete tagged item",
-      "content_type": 16,
-      "codename": "delete_taggeditem"
-    }
-  },
-  {
-    "model": "auth.permission",
-    "pk": 64,
-    "fields": {
-      "name": "Can view tagged item",
-      "content_type": 16,
-      "codename": "view_taggeditem"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 1,
-    "fields": {
-      "app_label": "admin",
-      "model": "logentry"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 2,
-    "fields": {
-      "app_label": "auth",
-      "model": "permission"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 3,
-    "fields": {
-      "app_label": "auth",
-      "model": "group"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 4,
-    "fields": {
-      "app_label": "contenttypes",
-      "model": "contenttype"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
-      "app_label": "sessions",
-      "model": "session"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 6,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "worker"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 7,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "position"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 8,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "project"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 9,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "projectcategory"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 10,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "tasktype"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 11,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "team"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 12,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "workerevaluation"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 13,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "task"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 14,
-    "fields": {
-      "app_label": "assignment_handler",
-      "model": "projectblock"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 15,
-    "fields": {
-      "app_label": "taggit",
-      "model": "tag"
-    }
-  },
-  {
-    "model": "contenttypes.contenttype",
-    "pk": 16,
-    "fields": {
-      "app_label": "taggit",
-      "model": "taggeditem"
-    }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "9pvprj884lv6sj3oy9mzakat4ldwbx19",
-    "fields": {
-      "session_data": ".eJxVjEsOAiEQBe_C2hDo0DC4dO8ZJt00yKiBZD4r4911klno9lXVe6mRtrWO25LncRJ1Vladfjem9MhtB3Kndus69bbOE-td0Qdd9LVLfl4O9--g0lK_dSGAbBAlWqAYYgxAUKJBi0lYAgIbZ7xHLMmzicU5P7DHEkCG4Fi9P8m-NyI:1r7I6c:Jk2Zt9l8v8NsdkVzA1teHlel5CkfrCNu_kTGndKXFwg",
-      "expire_date": "2023-12-10T16:35:38.365Z"
-    }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "bhm3lpjr0zbxw7g6x476qpdcxq1hbal4",
-    "fields": {
-      "session_data": ".eJxVjEsOAiEQBe_C2hDo0DC4dO8ZJt00yKiBZD4r4911klno9lXVe6mRtrWO25LncRJ1Vladfjem9MhtB3Kndus69bbOE-td0Qdd9LVLfl4O9--g0lK_dSGAbBAlWqAYYgxAUKJBi0lYAgIbZ7xHLMmzicU5P7DHEkCG4Fi9P8m-NyI:1r7HiY:asbU8cSF2nY52pq335cbcfMA9EKWRrx_Y0eAX_HntV0",
-      "expire_date": "2023-12-10T16:10:46.068Z"
-    }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "jjt7t7aonnahesa3worcdpxhvfiuqmuh",
-    "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyHQLbh49N5vIMuylappk9KejP-uJD3obTLvzbxUpH0rca-yximri7Lq9Nsl4ofMDeQ7zbdF8zJv65R0U_RBqx6WLM_r4f4dFKrlux5dH0SCdR2HM1tC9AZtApOQgwWPAFkgGYdgOhxb8D0n6YkRyIB6fwDEWzcS:1r7GWM:BPqhq9oGIWZzFhGQ1PVla9MX6dpmE3TgNeor7pr61fs",
-      "expire_date": "2023-12-10T14:54:06.918Z"
-    }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "nghnsuvk8kuoa7qqw28dlp2v3c5srqxy",
-    "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyHQLbh49N5vIMuylappk9KejP-uJD3obTLvzbxUpH0rca-yximri7Lq9Nsl4ofMDeQ7zbdF8zJv65R0U_RBqx6WLM_r4f4dFKrlux5dH0SCdR2HM1tC9AZtApOQgwWPAFkgGYdgOhxb8D0n6YkRyIB6fwDEWzcS:1r7GdX:wYIOOSVImaOQlcTKsDOs41QHOLGH8pkhrbSneaPgc60",
-      "expire_date": "2023-12-10T15:01:31.418Z"
-    }
-  },
-  {
-    "model": "assignment_handler.position",
-    "pk": 1,
-    "fields": {
-      "name": "Developer",
-      "duties": "Collaborate with developers to create algorithms and flowcharts; \r\nGenerate streamlined and effective code in accordance with given requirements; \r\nIncorporate software elements and third-party applications; \r\nValidate and launch software and systems; \r\nDiagnose, rectify, and enhance pre-existing software;"
-    }
-  },
-  {
-    "model": "assignment_handler.position",
-    "pk": 2,
-    "fields": {
-      "name": "Designer",
-      "duties": "Analyzing pertinent information and materials to shape conceptual plans; \r\nCreating sample art arrangements and seeking approval;\r\nGenerating finalized artwork using essential equipment and software; \r\nCollaborating with external agencies and peers as needed; \r\nEngaging in discussions with clients regarding layout and design;"
-    }
-  },
-  {
-    "model": "assignment_handler.position",
-    "pk": 3,
-    "fields": {
-      "name": "System analyst",
-      "duties": "Data and metrics analysis; \r\nMaking decisions about which methods to use; \r\nDrawing up technical specifications (TOR); \r\nDevelopment and writing of specifications; \r\nCompiling a list of system requirements; \r\nFunctional analysis of the system;"
-    }
-  },
-  {
-    "model": "assignment_handler.position",
-    "pk": 4,
-    "fields": {
-      "name": "Project manager",
-      "duties": "Strategize and effectuate projects;\r\nAid in outlining the project's objectives, scope, and deliverables;\r\nSpecify necessary tasks and resources;\r\nAssemble and oversee the project team;\r\nOversee the project's financial resources;\r\nControl over time constraints;"
-    }
-  },
-  {
-    "model": "assignment_handler.team",
-    "pk": 1,
-    "fields": {
-      "name": "Frontrunners"
-    }
-  },
-  {
-    "model": "assignment_handler.team",
-    "pk": 2,
-    "fields": {
-      "name": "Peacekeepers"
-    }
-  },
-  {
-    "model": "assignment_handler.team",
-    "pk": 3,
-    "fields": {
-      "name": "Impetuous"
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 1,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$Pqza6AMX6vHqNS2weaKXmD$r/SPezDD0bp9UM55oXZmqWlqwxijbuyD6G3B3InFeuU=",
-      "last_login": "2023-11-26T16:35:38.360Z",
-      "is_superuser": true,
-      "username": "marshall",
-      "first_name": "Alfred",
-      "last_name": "Marshall",
-      "email": "marshall@gmail.com",
-      "is_staff": true,
-      "is_active": true,
-      "date_joined": "2023-11-26T14:53:34.509Z",
-      "position": 1,
-      "rating_points": 10,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 2,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$VAGcSQLMA8poHwrwVfg412$7TqsdYG2gvKSwRFMoNqnz0Qw+4W72C/PZ7N7WnmO904=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "jevons",
-      "first_name": "William",
-      "last_name": "Jevons",
-      "email": "jevons@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T15:12:59.283Z",
-      "position": 2,
-      "rating_points": 3,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        1,
-        3
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 3,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$ErJyXB1Wv7s94grSt9bwkf$Pq7Cr8BMdn7P4si+f2FWcHeWFEOG8dFyDI1W/hfLKlk=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "edgeworth",
-      "first_name": "Francis",
-      "last_name": "Edgeworth",
-      "email": "edgeworth@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T15:14:51.749Z",
-      "position": 2,
-      "rating_points": 0,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        2,
-        3
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 4,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$cZGqEwamhBZdn1EltcpqpV$GwNJsyTou9eUY5EU5hxDBVuCjtmo/SA1FhIG/yFijyo=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "knight",
-      "first_name": "Frank",
-      "last_name": "Knight",
-      "email": "knight@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T15:16:41.280Z",
-      "position": 3,
-      "rating_points": 0,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        2
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 5,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$ty2E6gt7yh5teqNUgkFKbW$XFLsrJcIqGHnbVbuS7C4ANlgLZgNYGBG1HE4WCWRPhY=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "maris",
-      "first_name": "Bernard",
-      "last_name": "Maris",
-      "email": "maris@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T15:18:50.346Z",
-      "position": 1,
-      "rating_points": 5,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        2,
-        3
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 6,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$tz4dnPhVht0NLi2CKReziH$3OPnrJRU8keVkjmLpb/PKExmVmdOTebv1ElnDtdKVqc=",
-      "last_login": "2023-11-26T15:57:11.043Z",
-      "is_superuser": false,
-      "username": "allen",
-      "first_name": "Robert",
-      "last_name": "Allen",
-      "email": "allen@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T15:55:46.117Z",
-      "position": 2,
-      "rating_points": 0,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        2
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 7,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$iongKLYxuTnT9aXybAHBR0$9hkoxLEv4mqOuuEmY9nk55tLJUqFz91mUuymQ2rgbmY=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "hotelling",
-      "first_name": "Harold",
-      "last_name": "Hotelling",
-      "email": "hotelling@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T16:00:37.563Z",
-      "position": 4,
-      "rating_points": 0,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        2
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 8,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$GzyS0fgp2UBV06Ljl5dHBa$1pSz1hxnSYom9iIv2AoO2jDx1G4MXOG7LggAr/i11YE=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "bain",
-      "first_name": "Joe",
-      "last_name": "Bain",
-      "email": "bain@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T16:08:44.567Z",
-      "position": 4,
-      "rating_points": 0,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.worker",
-    "pk": 9,
-    "fields": {
-      "password": "pbkdf2_sha256$600000$Fwv0YV8q2KIrtGl1VQPYIc$bgE4yT6cDO4L/6mvYGPX5INOTklWXHIsB6w4uvo7BrU=",
-      "last_login": null,
-      "is_superuser": false,
-      "username": "chamberlin",
-      "first_name": "Edward",
-      "last_name": "Chamberlin",
-      "email": "chamberlin@gmail.com",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2023-11-26T16:10:23.747Z",
-      "position": 2,
-      "rating_points": 0,
-      "groups": [],
-      "user_permissions": [],
-      "teams": [
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.projectcategory",
-    "pk": 1,
-    "fields": {
-      "name": "software development",
-      "depiction": "Projects centered on building, purchasing, and deploying software solutions to support business operations, customer needs, and internal user productivity. Can include custom mobile/web/desktop application development, integration between systems, implementation of third-party software packages, legacy modernization, and application upgrades."
-    }
-  },
-  {
-    "model": "assignment_handler.projectcategory",
-    "pk": 2,
-    "fields": {
-      "name": "collaboration/productivity",
-      "depiction": "Implementing new systems and tools for communication, collaboration, content/document management, scheduling, and project management. This improves workforce connectivity, alignment, and productivity. Example projects: enterprise social networks, instant messaging, Office 365 deployment, SharePoint portals, project management systems."
-    }
-  },
-  {
-    "model": "assignment_handler.projectcategory",
-    "pk": 3,
-    "fields": {
-      "name": "infrastructure/networking",
-      "depiction": "Projects that focus on upgrading hardware infrastructure like servers, storage, networks, and devices to improve performance, capacity, speed, reliability, and security. Activities may include migrating to new servers, expanding data center capacity, implementing new networks/network devices, and large-scale desktop/device refresh initiatives."
-    }
-  },
-  {
-    "model": "assignment_handler.project",
-    "pk": 2,
-    "fields": {
-      "name": "Customer mobile account management application development",
-      "depiction": "This project focuses on building a new customer-facing mobile app that allows users to access their account, get account balances, make payments, and manage account preferences anytime from their mobile device. The scope includes developing the front-end mobile application for both iOS and Android platforms, integrating with back-end account management systems via APIs, building a responsive web version for accessibility, ensuring security controls are designed into the application, load testing and performance tuning, and releasing a production version for download in the app stores after thorough quality assurance testing. Post-launch, the app will be enhanced over time to add new capabilities based on customer feedback and usage analytics. The goal is to provide customers a convenient, user-friendly, and secure way to manage their account on-the-go and resolve common service needs without calling the contact center.",
-      "priority": "S",
-      "time_constraints": "2026-06-14",
-      "project_category": 1,
-      "team": 1,
-      "budget": "48000.00",
-      "funds_used": "14000.00"
-    }
-  },
-  {
-    "model": "assignment_handler.project",
-    "pk": 3,
-    "fields": {
-      "name": "Unified communications platform implementation",
-      "depiction": "This project will implement a new Unified Communications platform consisting of instant messaging, voice, video conferencing, and screen sharing capabilities. It will replace the current fragmented collaboration tools with a single integrated platform to improve workforce connectivity and collaboration. The project will roll out the new UC software across the organization, migrate users from legacy systems, integrate the software with Active Directory for authentication, implement audio/video equipment in conference rooms, train employees on new conferencing and collaboration features, and establish governance policies around usage. Once fully deployed, the UC platform aims to increase workforce productivity by streamlining communication channels, facilitating remote meetings, and enabling collaboration across dispersed teams and offices. Adoption will be measured through usage analytics and surveys. Ongoing maintenance and user support will be provided by the IT service desk.",
-      "priority": "U",
-      "time_constraints": "2025-12-16",
-      "project_category": 2,
-      "team": 1,
-      "budget": "30000.00",
-      "funds_used": "12000.00"
-    }
-  },
-  {
-    "model": "assignment_handler.project",
-    "pk": 4,
-    "fields": {
-      "name": "Data center migration to cloud infrastructure",
-      "depiction": "This project will migrate the on-premises data center infrastructure to the public cloud to take advantage of increased scalability, agility, and reduced costs. It will involve assessing and selecting the optimal cloud provider and services to replace the current virtualized server and storage environment, executing the migration using best practices, validating successful transfer of workloads, updating network configurations for the new cloud environment, putting monitoring and management systems in place, and decommissioning legacy data center facilities. Once complete, the organization aims to operate its critical production workloads fully in the cloud and leverage the flexibility of cloud computing to optimize costs and scale resources based on real-time operational needs. The migration also aims to increase IT infrastructure reliability and availability by leveraging the redundancy and disaster recovery capabilities inherent in the cloud provider's platform.",
-      "priority": "A",
-      "time_constraints": "2026-04-29",
-      "project_category": 3,
-      "team": 2,
-      "budget": "56000.00",
-      "funds_used": "24000.00"
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 11,
-    "fields": {
-      "project": 2,
-      "name": "Frontend development",
-      "depiction": "Functional block",
-      "total_tasks": 12,
-      "completed_tasks": 6
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 12,
-    "fields": {
-      "project": 2,
-      "name": "Backend development",
-      "depiction": "Functional block",
-      "total_tasks": 16,
-      "completed_tasks": 4
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 13,
-    "fields": {
-      "project": 2,
-      "name": "Database/data layer",
-      "depiction": "Functional block",
-      "total_tasks": 14,
-      "completed_tasks": 8
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 14,
-    "fields": {
-      "project": 2,
-      "name": "Documentation",
-      "depiction": "Functional block",
-      "total_tasks": 10,
-      "completed_tasks": 8
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 15,
-    "fields": {
-      "project": 2,
-      "name": "UX/design",
-      "depiction": "Functional block",
-      "total_tasks": 8,
-      "completed_tasks": 5
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 16,
-    "fields": {
-      "project": 3,
-      "name": "Frontend development",
-      "depiction": "Functional block",
-      "total_tasks": 17,
-      "completed_tasks": 17
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 17,
-    "fields": {
-      "project": 3,
-      "name": "Backend development",
-      "depiction": "Functional block",
-      "total_tasks": 18,
-      "completed_tasks": 18
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 18,
-    "fields": {
-      "project": 3,
-      "name": "Database/data layer",
-      "depiction": "Functional block",
-      "total_tasks": 20,
-      "completed_tasks": 20
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 19,
-    "fields": {
-      "project": 3,
-      "name": "Infrastructure setup",
-      "depiction": "Functional block",
-      "total_tasks": 23,
-      "completed_tasks": 23
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 20,
-    "fields": {
-      "project": 4,
-      "name": "Database/data layer",
-      "depiction": "Functional block",
-      "total_tasks": 24,
-      "completed_tasks": 18
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 21,
-    "fields": {
-      "project": 4,
-      "name": "Testing",
-      "depiction": "Functional block",
-      "total_tasks": 20,
-      "completed_tasks": 14
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 22,
-    "fields": {
-      "project": 4,
-      "name": "Infrastructure setup",
-      "depiction": "Functional block",
-      "total_tasks": 16,
-      "completed_tasks": 9
-    }
-  },
-  {
-    "model": "assignment_handler.projectblock",
-    "pk": 23,
-    "fields": {
-      "project": 4,
-      "name": "Documentation",
-      "depiction": "Functional block",
-      "total_tasks": 18,
-      "completed_tasks": 9
-    }
-  },
-  {
-    "model": "assignment_handler.tasktype",
-    "pk": 1,
-    "fields": {
-      "name": "bug",
-      "depiction": "Software bugs are problems in the design, building, or use of computer programs that lead to incorrect or surprising results. The process of identifying and fixing these issues is called debugging. Debugging often uses formal methods or tools to pinpoint the exact causes of bugs. Since the middle of the last century, some computer systems have included features to forestall, detect, or automatically fix various bugs while the software is running. The overall meaning remains the same - software bugs are errors that need to be found and corrected, and debugging is an important part of software development and maintenance."
-    }
-  },
-  {
-    "model": "assignment_handler.tasktype",
-    "pk": 2,
-    "fields": {
-      "name": "maintenance",
-      "depiction": "Maintenance tasks involve the ongoing activities necessary to keep systems, equipment, or infrastructure in proper working condition. This can include routine inspections, repairs, updates, and replacements of components to prevent deterioration or malfunctions. Maintenance tasks are essential to extend the lifespan and ensure the continued reliability of assets, reducing the likelihood of unexpected failures and downtime."
-    }
-  },
-  {
-    "model": "assignment_handler.tasktype",
-    "pk": 3,
-    "fields": {
-      "name": "enhancement",
-      "depiction": "Enhancement refers to a substantial improvement or service offering that includes significant supplemental capabilities, as concluded exclusively on the corporate level and as designated in an Order Form."
-    }
-  },
-  {
-    "model": "assignment_handler.tasktype",
-    "pk": 4,
-    "fields": {
-      "name": "testing",
-      "depiction": "Testing establishes and upholds a defined set of standards for the development or production of dependable products. Testing system is designed to enhance customer trust and bolster a company's reputation. Simultaneously, it refines operational procedures, enhances efficiency, and empowers the company to remain competitive within the industry."
-    }
-  },
-  {
-    "model": "assignment_handler.tasktype",
-    "pk": 5,
-    "fields": {
-      "name": "optimization",
-      "depiction": "Optimization is a systematic process for improving the internal structure of existing software code without modifying its external functionality. It relies on applying a series of incremental, behavior-preserving changes called refactorings that enhance the code's internal quality attributes without altering what it does. Each individual refactoring makes a small modification, but when applied sequentially, they collectively transform code in significant ways by removing complexity, improving readability and facilitating maintenance while preserving correctness. The goal of refactoring is to reshape and reorganize code for stability and long-term flexibility without introducing new bugs or changing outputs."
-    }
-  },
-  {
-    "model": "assignment_handler.task",
-    "pk": 1,
-    "fields": {
-      "name": "UI login page error troubleshooting",
-      "depiction": "Investigate and fix the bug where users are unable to log in due to a JavaScript error on the login page. This involves identifying the root cause, modifying the code to resolve the issue, and thoroughly testing to ensure the problem is completely resolved and users can log in seamlessly.",
-      "time_constraints": "2025-07-24",
-      "is_completed": false,
-      "priority": "U",
-      "task_type": 1,
-      "assignees": []
-    }
-  },
-  {
-    "model": "assignment_handler.task",
-    "pk": 2,
-    "fields": {
-      "name": "Apply security patches",
-      "depiction": "Regularly update and maintain the system by applying security patches, addressing vulnerabilities, and ensuring the software's security. This task focuses on identifying and patching vulnerabilities that could potentially be exploited, keeping the system secure and up to date.",
-      "time_constraints": "2025-04-12",
-      "is_completed": true,
-      "priority": "U",
-      "task_type": 2,
-      "assignees": [
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.task",
-    "pk": 3,
-    "fields": {
-      "name": "Improve the website's search functionality",
-      "depiction": "The goal of this task is to improve the website's search functionality in order to provide more relevant results for users. This will involve implementing partial word matching and synonym support within the search algorithm to expand the capabilities beyond exact keyword searches. Additional efforts will focus on optimizing the search index to incorporate new site content, adding filter/faceted search by attributes like product category and date, and improving the ranking of results by analyzing word frequency. Other planned enhancements are expanding search to include related documents and media, adding autocomplete suggestions and search keywords in the results page UI, implementing search usage tracking to guide future optimizations, and performing thorough search quality testing to measure improvements in relevance. Overall, this enhancement encompasses upgrades to the core search algorithm, index, UI, and analytics to make search on the website more powerful and effective for finding relevant content.",
-      "time_constraints": "2025-03-07",
-      "is_completed": true,
-      "priority": "S",
-      "task_type": 3,
-      "assignees": [
-        6,
-        7
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.task",
-    "pk": 4,
-    "fields": {
-      "name": "Automate regression testing",
-      "depiction": "Develop automated test scripts to ensure that existing functionality continues to work as expected after each software release. This task aims to streamline the testing process, reduce human error, and maintain the quality of the software through automated test case execution and result reporting.",
-      "time_constraints": "2025-04-19",
-      "is_completed": false,
-      "priority": "U",
-      "task_type": 4,
-      "assignees": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "assignment_handler.task",
-    "pk": 5,
-    "fields": {
-      "name": "Improve image loading speed",
-      "depiction": "Optimize the code and server settings to reduce image loading times and enhance the overall performance of the website. This task may involve image compression, content delivery network (CDN) integration, and code refactoring to minimize load times and improve user experience.",
-      "time_constraints": "2025-06-16",
-      "is_completed": false,
-      "priority": "A",
-      "task_type": 5,
-      "assignees": [
-        9,
-        5
-      ]
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 1,
-    "fields": {
-      "name": "developing",
-      "slug": "developing"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 2,
-    "fields": {
-      "name": "deployment",
-      "slug": "deployment"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 3,
-    "fields": {
-      "name": "testing",
-      "slug": "testing"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 4,
-    "fields": {
-      "name": "optimization",
-      "slug": "optimization"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 5,
-    "fields": {
-      "name": "security",
-      "slug": "security"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 6,
-    "fields": {
-      "name": "python-niche",
-      "slug": "python-niche"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 7,
-    "fields": {
-      "name": "adaptive-layout",
-      "slug": "adaptive-layout"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 8,
-    "fields": {
-      "name": "infrastructure",
-      "slug": "infrastructure"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 9,
-    "fields": {
-      "name": "cross-func",
-      "slug": "cross-func"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 10,
-    "fields": {
-      "name": "multi-tech",
-      "slug": "multi-tech"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 11,
-    "fields": {
-      "name": "inter-sys",
-      "slug": "inter-sys"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 12,
-    "fields": {
-      "name": "cross-dept",
-      "slug": "cross-dept"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 13,
-    "fields": {
-      "name": "composite-it",
-      "slug": "composite-it"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 14,
-    "fields": {
-      "name": "inter-domain",
-      "slug": "inter-domain"
-    }
-  },
-  {
-    "model": "taggit.tag",
-    "pk": 15,
-    "fields": {
-      "name": "hybrid-proj",
-      "slug": "hybrid-proj"
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 1,
-    "fields": {
-      "tag": 1,
-      "content_type": 13,
-      "object_id": 1
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 2,
-    "fields": {
-      "tag": 2,
-      "content_type": 13,
-      "object_id": 1
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 3,
-    "fields": {
-      "tag": 3,
-      "content_type": 13,
-      "object_id": 1
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 4,
-    "fields": {
-      "tag": 4,
-      "content_type": 13,
-      "object_id": 1
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 5,
-    "fields": {
-      "tag": 1,
-      "content_type": 13,
-      "object_id": 2
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 6,
-    "fields": {
-      "tag": 2,
-      "content_type": 13,
-      "object_id": 2
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 7,
-    "fields": {
-      "tag": 3,
-      "content_type": 13,
-      "object_id": 2
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 8,
-    "fields": {
-      "tag": 5,
-      "content_type": 13,
-      "object_id": 2
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 9,
-    "fields": {
-      "tag": 1,
-      "content_type": 13,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 10,
-    "fields": {
-      "tag": 3,
-      "content_type": 13,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 11,
-    "fields": {
-      "tag": 4,
-      "content_type": 13,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 12,
-    "fields": {
-      "tag": 6,
-      "content_type": 13,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 13,
-    "fields": {
-      "tag": 7,
-      "content_type": 13,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 14,
-    "fields": {
-      "tag": 1,
-      "content_type": 13,
-      "object_id": 4
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 15,
-    "fields": {
-      "tag": 3,
-      "content_type": 13,
-      "object_id": 4
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 16,
-    "fields": {
-      "tag": 4,
-      "content_type": 13,
-      "object_id": 4
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 17,
-    "fields": {
-      "tag": 6,
-      "content_type": 13,
-      "object_id": 4
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 18,
-    "fields": {
-      "tag": 1,
-      "content_type": 13,
-      "object_id": 5
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 19,
-    "fields": {
-      "tag": 2,
-      "content_type": 13,
-      "object_id": 5
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 20,
-    "fields": {
-      "tag": 3,
-      "content_type": 13,
-      "object_id": 5
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 21,
-    "fields": {
-      "tag": 4,
-      "content_type": 13,
-      "object_id": 5
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 22,
-    "fields": {
-      "tag": 8,
-      "content_type": 13,
-      "object_id": 5
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 25,
-    "fields": {
-      "tag": 9,
-      "content_type": 8,
-      "object_id": 2
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 26,
-    "fields": {
-      "tag": 10,
-      "content_type": 8,
-      "object_id": 2
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 27,
-    "fields": {
-      "tag": 11,
-      "content_type": 8,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 28,
-    "fields": {
-      "tag": 12,
-      "content_type": 8,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 29,
-    "fields": {
-      "tag": 13,
-      "content_type": 8,
-      "object_id": 3
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 30,
-    "fields": {
-      "tag": 14,
-      "content_type": 8,
-      "object_id": 4
-    }
-  },
-  {
-    "model": "taggit.taggeditem",
-    "pk": 31,
-    "fields": {
-      "tag": 15,
-      "content_type": 8,
-      "object_id": 4
-    }
-  }
 ]
