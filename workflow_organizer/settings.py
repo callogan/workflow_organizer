@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+import dj_database_url
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -94,14 +95,10 @@ WSGI_APPLICATION = "workflow_organizer.wsgi.application"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PASS"),
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
+    "default": dj_database_url.config(
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
 }
 
 
