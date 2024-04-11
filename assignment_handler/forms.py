@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from taggit.forms import TagField
 
 from assignment_handler.models import (
@@ -87,13 +87,57 @@ class WorkerCreateForm(UserCreationForm):
             "rating_points",
             "email",
             "password1",
-            "password2",
+            "password2"
         )
 
-    def clean_username(self):
-        if self.instance and self.instance.username == self.cleaned_data["username"]:
-            return self.cleaned_data["username"]
-        return super().clean_username()
+
+class WorkerUpdateForm(UserChangeForm):
+    first_name = forms.CharField(
+        max_length=255,
+        widget=forms.TextInput(
+            attrs={"placeholder": "First Name*", "style": "padding: 10px"}
+        ),
+        label="",
+        required=True,
+    )
+    last_name = forms.CharField(
+        max_length=255,
+        widget=forms.TextInput(
+            attrs={"placeholder": "Last Name*", "style": "padding: 10px"}
+        ),
+        label="",
+        required=True,
+    )
+    email = forms.EmailField(
+        widget=forms.EmailInput(
+            attrs={"placeholder": "Email*", "style": "padding: 10px"}
+        ),
+        required=True,
+        label="",
+    )
+    position = forms.ModelChoiceField(
+        widget=forms.Select(attrs={"style": "padding: 10px;"}),
+        queryset=Position.objects.all(),
+        required=False,
+    )
+    teams = forms.ModelMultipleChoiceField(
+        widget=forms.SelectMultiple(attrs={"style": "padding: 10px;"}),
+        queryset=Team.objects.all(),
+        required=False,
+    )
+    rating_points = forms.IntegerField(initial=0, required=False)
+    password = None
+
+    class Meta:
+        model = Worker
+        fields = (
+            "first_name",
+            "last_name",
+            "position",
+            "teams",
+            "rating_points",
+            "email"
+        )
 
 
 class WorkerRatingPointsUpdateForm(forms.ModelForm):

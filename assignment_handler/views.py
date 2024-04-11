@@ -11,6 +11,7 @@ from django.views.generic.base import View, TemplateView
 
 from assignment_handler.forms import (
     WorkerCreateForm,
+    WorkerUpdateForm,
     WorkerEvaluationForm,
     PositionForm,
     PositionSearchForm,
@@ -160,12 +161,12 @@ class WorkerCreate(generic.CreateView):
 
 class WorkerUpdate(LoginRequiredMixin, generic.UpdateView):
     model = Worker
-    form_class = WorkerCreateForm
+    form_class = WorkerUpdateForm
     template_name = "assignment_handler/worker_form.html"
     success_url = reverse_lazy("assignment_handler:worker-detail")
 
     def post(self, request, *args, **kwargs):
-        form = WorkerCreateForm(request.POST, instance=self.get_object())
+        form = WorkerUpdateForm(request.POST, instance=self.get_object())
         if form.is_valid():
             return self.form_valid(form)
         else:
@@ -173,7 +174,6 @@ class WorkerUpdate(LoginRequiredMixin, generic.UpdateView):
 
     def form_valid(self, form):
         self.object = form.save()
-        form.save_m2m()
         return super().form_valid(form)
 
     def form_invalid(self, form):
