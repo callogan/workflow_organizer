@@ -563,6 +563,7 @@ class ProjectCreateView(LoginRequiredMixin, generic.CreateView):
                             new_project_block.save()
 
                     project.save()
+                    form.save_m2m()
 
                     return redirect(
                         reverse_lazy(
