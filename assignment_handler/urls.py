@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import (
+from assignment_handler.views import (
     index,
     WorkerDetailView,
     WorkerCreate,

@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import UserCreationForm
 from taggit.forms import TagField
 
-from .models import (
+from assignment_handler.models import (
     Worker,
     WorkerEvaluation,
     Position,

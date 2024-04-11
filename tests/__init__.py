@@ -1,2 +1,2 @@
-from .test_views import AssignmentHandlerViewsTestCase
-from .test_views_helpers import AssignmentHandlerViewsHelpersTestCase
+from tests.test_views import AssignmentHandlerViewsTestCase
+from tests.test_views_helpers import AssignmentHandlerViewsHelpersTestCase

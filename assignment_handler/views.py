@@ -9,7 +9,7 @@ from django.utils import timezone
 from django.views import generic
 from django.views.generic.base import View, TemplateView
 
-from .forms import (
+from assignment_handler.forms import (
     WorkerCreateForm,
     WorkerEvaluationForm,
     PositionForm,
@@ -23,7 +23,7 @@ from .forms import (
     ProjectCategorySearchForm,
 )
 
-from .models import (
+from assignment_handler.models import (
     Worker,
     WorkerEvaluation,
     Position,
@@ -35,12 +35,12 @@ from .models import (
     ProjectCategory,
 )
 
-from .views_helpers import (
+from assignment_handler.views_helpers import (
     calculate_average_progress,
     budget_status_completed,
     budget_status_uncompleted,
 )
-from .views_validators import (
+from assignment_handler.views_validators import (
     validate_project_create_custom,
     validate_project_update_procedure_custom,
     validate_project_update_structures_custom,
