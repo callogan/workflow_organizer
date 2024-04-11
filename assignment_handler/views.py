@@ -5,7 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import QuerySet, F, Q, Count
 from django.shortcuts import render, get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
-from django.utils import timezone
+from datetime import timezone, datetime
 from django.views import generic
 from django.views.generic.base import View, TemplateView
 
@@ -325,9 +325,9 @@ class TaskDetailView(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         task = context["object"]
-        now = timezone.now()
+        now = datetime.now(timezone.utc)
         deadline = task.time_constraints
-        deadline = datetime.datetime(
+        deadline = datetime(
             deadline.year, deadline.month, deadline.day, tzinfo=timezone.utc
         )
         diff = deadline - now
@@ -472,10 +472,10 @@ class ProjectDetailView(generic.DetailView):
 
         context["current_phase"] = current_phase
 
-        now = timezone.now()
+        now = datetime.now(timezone.utc)
 
         deadline = project.time_constraints
-        deadline = datetime.datetime(
+        deadline = datetime(
             deadline.year, deadline.month, deadline.day, tzinfo=timezone.utc
         )
 
