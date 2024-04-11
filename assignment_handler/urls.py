@@ -102,7 +102,7 @@ urlpatterns = [
         name="team-update",
     ),
     path(
-        "teams/<int:pk>/delete",
+        "teams/<int:pk>/delete/",
         TeamDeleteView.as_view(),
         name="team-delete",
     ),
@@ -157,12 +157,12 @@ urlpatterns = [
         name="project-create",
     ),
     path(
-        "projects/<int:pk>/update",
+        "projects/<int:pk>/update/",
         ProjectUpdateView.as_view(),
         name="project-update",
     ),
     path(
-        "projects/<int:pk>/delete",
+        "projects/<int:pk>/delete/",
         ProjectDeleteView.as_view(),
         name="project-delete",
     ),
