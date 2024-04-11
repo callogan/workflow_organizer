@@ -131,7 +131,7 @@ class WorkerDetailView(LoginRequiredMixin, generic.DetailView):
         return context
 
 
-class WorkerCreate(generic.CreateView):
+class WorkerCreateView(generic.CreateView):
     model = Worker
     form_class = WorkerCreateForm
     template_name = "registration/register.html"
@@ -159,7 +159,7 @@ class WorkerCreate(generic.CreateView):
         return context
 
 
-class WorkerUpdate(LoginRequiredMixin, generic.UpdateView):
+class WorkerUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Worker
     form_class = WorkerUpdateForm
     template_name = "assignment_handler/worker_form.html"
@@ -196,7 +196,7 @@ class WorkerUpdate(LoginRequiredMixin, generic.UpdateView):
         return context
 
 
-class WorkerDelete(LoginRequiredMixin, generic.DeleteView):
+class WorkerDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Worker
     success_url = reverse_lazy("assignment_handler:index")
     template_name = "assignment_handler/worker_confirm_delete.html"
@@ -259,21 +259,21 @@ class PositionListView(LoginRequiredMixin, generic.ListView):
         return queryset
 
 
-class PositionCreate(LoginRequiredMixin, generic.CreateView):
+class PositionCreateView(LoginRequiredMixin, generic.CreateView):
     model = Position
     form_class = PositionForm
     template_name = "assignment_handler/position_form.html"
     success_url = reverse_lazy("assignment_handler:position-list")
 
 
-class PositionUpdate(LoginRequiredMixin, generic.UpdateView):
+class PositionUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Position
     form_class = PositionForm
     template_name = "assignment_handler/position_form.html"
     success_url = reverse_lazy("assignment_handler:position-list")
 
 
-class PositionDelete(LoginRequiredMixin, generic.DeleteView):
+class PositionDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Position
     template_name = "assignment_handler/position_confirm_delete.html"
     success_url = reverse_lazy("assignment_handler:position-list")
@@ -284,13 +284,13 @@ class TeamDetailView(LoginRequiredMixin, generic.DetailView):
     template_name = "assignment_handler/team_detail.html"
 
 
-class TeamCreate(LoginRequiredMixin, generic.CreateView):
+class TeamCreateView(LoginRequiredMixin, generic.CreateView):
     model = Team
     form_class = TeamForm
     success_url = reverse_lazy("assignment_handler:dashboard")
 
 
-class TeamUpdate(LoginRequiredMixin, generic.UpdateView):
+class TeamUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Team
     form_class = TeamForm
     template_name = "assignment_handler/team_form.html"
@@ -299,7 +299,7 @@ class TeamUpdate(LoginRequiredMixin, generic.UpdateView):
         return reverse("assignment_handler:dashboard", kwargs={"pk": self.object.pk})
 
 
-class TeamDelete(LoginRequiredMixin, generic.DeleteView):
+class TeamDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Team
     success_url = reverse_lazy("assignment_handler:dashboard")
     template_name = "assignment_handler/team_confirm_delete.html"
@@ -328,7 +328,7 @@ class TaskDetailView(LoginRequiredMixin, generic.DetailView):
         return context
 
 
-class TaskCreate(LoginRequiredMixin, generic.CreateView):
+class TaskCreateView(LoginRequiredMixin, generic.CreateView):
     model = Task
     form_class = TaskForm
     template_name = "assignment_handler/task_form.html"
@@ -348,7 +348,7 @@ class TaskCreate(LoginRequiredMixin, generic.CreateView):
             return self.form_invalid(form)
 
 
-class TaskUpdate(LoginRequiredMixin, generic.UpdateView):
+class TaskUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Task
     form_class = TaskForm
     template_name = "assignment_handler/task_form.html"
@@ -372,7 +372,7 @@ class TaskUpdate(LoginRequiredMixin, generic.UpdateView):
         )
 
 
-class TaskDelete(LoginRequiredMixin, generic.DeleteView):
+class TaskDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Task
     success_url = reverse_lazy("assignment_handler:index")
     template_name = "assignment_handler/task_confirm_delete.html"
@@ -399,21 +399,21 @@ class TaskTypeListView(LoginRequiredMixin, generic.ListView):
         return queryset
 
 
-class TaskTypeCreate(LoginRequiredMixin, generic.CreateView):
+class TaskTypeCreateView(LoginRequiredMixin, generic.CreateView):
     model = TaskType
     form_class = TaskTypeForm
     template_name = "assignment_handler/task_type_form.html"
     success_url = reverse_lazy("assignment_handler:task-type-list")
 
 
-class TaskTypeUpdate(LoginRequiredMixin, generic.UpdateView):
+class TaskTypeUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = TaskType
     form_class = TaskTypeForm
     template_name = "assignment_handler/task_type_form.html"
     success_url = reverse_lazy("assignment_handler:task-type-list")
 
 
-class TaskTypeDelete(LoginRequiredMixin, generic.DeleteView):
+class TaskTypeDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = TaskType
     template_name = "assignment_handler/task_type_confirm_delete.html"
     success_url = reverse_lazy("assignment_handler:task-type-list")
@@ -498,7 +498,7 @@ class ProjectDetailView(generic.DetailView):
         return context
 
 
-class ProjectCreate(LoginRequiredMixin, generic.CreateView):
+class ProjectCreateView(LoginRequiredMixin, generic.CreateView):
     queryset = Project.objects.all()
     model = Project
     form_class = ProjectForm
@@ -557,7 +557,7 @@ class ProjectCreate(LoginRequiredMixin, generic.CreateView):
                                 name=name,
                                 depiction="Functional block",
                                 total_tasks=total_tasks_value,
-                                completed_tasks=0,
+                                completed_tasks=0
                             )
 
                             new_project_block.save()
@@ -583,7 +583,7 @@ class ProjectCreate(LoginRequiredMixin, generic.CreateView):
         return super().form_invalid(form)
 
 
-class ProjectUpdate(LoginRequiredMixin, generic.UpdateView):
+class ProjectUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Project
     form_class = ProjectForm
     template_name = "assignment_handler/project_form_update.html"
@@ -672,7 +672,7 @@ class ProjectUpdate(LoginRequiredMixin, generic.UpdateView):
                                     name=name,
                                     depiction="Functional block",
                                     total_tasks=total_tasks_value,
-                                    completed_tasks=0,
+                                    completed_tasks=0
                                 )
 
                                 new_project_block.save()
@@ -732,7 +732,7 @@ class ProjectUpdate(LoginRequiredMixin, generic.UpdateView):
         )
 
 
-class ProjectDelete(LoginRequiredMixin, generic.DeleteView):
+class ProjectDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Project
     success_url = reverse_lazy("assignment_handler:dashboard")
     template_name = "assignment_handler/project_confirm_delete.html"
@@ -759,21 +759,21 @@ class ProjectCategoryListView(LoginRequiredMixin, generic.ListView):
         return queryset
 
 
-class ProjectCategoryCreate(LoginRequiredMixin, generic.CreateView):
+class ProjectCategoryCreateView(LoginRequiredMixin, generic.CreateView):
     model = ProjectCategory
     form_class = ProjectCategoryForm
     template_name = "assignment_handler/project_category_form.html"
     success_url = reverse_lazy("assignment_handler:project-category-list")
 
 
-class ProjectCategoryUpdate(LoginRequiredMixin, generic.UpdateView):
+class ProjectCategoryUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = ProjectCategory
     form_class = ProjectCategoryForm
     template_name = "assignment_handler/project_category_form.html"
     success_url = reverse_lazy("assignment_handler:project-category-list")
 
 
-class ProjectCategoryDelete(LoginRequiredMixin, generic.DeleteView):
+class ProjectCategoryDeleteView(LoginRequiredMixin, generic.DeleteView):
     model = ProjectCategory
     template_name = "assignment_handler/project_category_confirm_delete.html"
     success_url = reverse_lazy("assignment_handler:project-category-list")
