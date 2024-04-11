@@ -131,18 +131,19 @@
                         <button class="btn btn-success dropdown-toggle font-weight-bolder {% if worker.id %}visible{% else %}invisible{% endif %}" type="button" id="teamsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Team-matching list
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="teamsDropdown">
+                        <div style="padding: 10px; min-width: 225px; width: max-content;" class="dropdown-menu" aria-labelledby="teamsDropdown">
                           {% for team in user.teams.all %}
-                            <a class="dropdown-item {% if team in worker.teams.all %}text-primary{% else %}text-danger{% endif %}" href="{% url 'assignment_handler:toggle-team-transition' pk=worker.id team_id=team.id %}">
+                            <form action="{% url 'assignment_handler:toggle-team-transition' pk=worker.id team_id=team.id %}" method="post">
+                              {% csrf_token %}
                               <div class="d-flex align-items-center justify-content-between custom-dropdown-item-initial">
-                                <p class="text-start fw-semibold mb-0" style="margin-right: 20px; color: #ff9900;">{{ team.name }} team</p>
+                                <p class="text-start fw-semibold mb-0" style="color: #ff9900;">{{ team.name }} team</p>
                                 {% if team in worker.teams.all %}
-                                  <button class="btn button-sm text-white font-weight-bolder" style="background-color: #fe000b; font-size: 10px; margin-bottom: 0; padding: 2px 5px;">Remove</button>
+                                  <button type="submit" class="btn button-sm text-white font-weight-bolder" style="background-color: #fe000b; font-size: 10px; margin-bottom: 0; padding: 2px 5px;">Remove</button>
                                 {% else %}
-                                  <button class="btn button-sm text-white font-weight-bolder" style="background-color: #648c1c; font-size: 10px; margin-bottom: 0; padding: 2px 5px;">Add</button>
+                                  <button type="submit" class="btn button-sm text-white font-weight-bolder" style="background-color: #648c1c; font-size: 10px; margin-bottom: 0; padding: 2px 5px;">Add</button>
                                 {% endif %}
                               </div>
-                            </a>
+                            </form>
                           {% endfor %}
                         </div>
                       </div>

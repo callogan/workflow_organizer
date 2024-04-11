@@ -909,7 +909,7 @@ class ProjectTrackingPanelView(TemplateView):
 
 
 class ToggleAssignTaskView(LoginRequiredMixin, View):
-    def get(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         assignee = request.user
         task = Task.objects.get(id=self.kwargs["pk"])
 
@@ -926,7 +926,7 @@ class ToggleAssignTaskView(LoginRequiredMixin, View):
 
 
 class ToggleTeamTransitionView(LoginRequiredMixin, View):
-    def get(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         worker = Worker.objects.get(id=self.kwargs["pk"])
         team_id = kwargs["team_id"]
         team = get_object_or_404(Team, pk=team_id)
