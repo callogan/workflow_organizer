@@ -8,7 +8,13 @@ using Task panel. You might as well collaborate along with other workers to tack
 and Project tracking panel. Tags help you to simplify the navigation through finding similar assignments faster.
 
 ### Check it out!
-[Workflow Organizer project deployed to Render]()
+[Workflow Organizer project deployed to Render](https://workflow-organizer.onrender.com/)
+
+### Try
+```shell
+login: marshall
+password: 1qazcde3
+```
 
 ## Installation
 
