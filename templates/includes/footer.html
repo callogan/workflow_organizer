@@ -57,11 +57,13 @@
         <div>
           <h6 class="text-gradient text-primary text-sm">Personal affairs</h6>
           <ul class="flex-column ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'assignment_handler:worker-detail' pk=user.id %}" target="_blank">
-                Profile
-              </a>
-            </li>
+            {% if user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'assignment_handler:worker-detail' pk=user.id %}" target="_blank">
+                  Profile
+                </a>
+              </li>
+            {% endif %}
             <li class="nav-item">
               <a class="nav-link" href="{% url 'assignment_handler:workers-list' %}" target="_blank">
                 Rating status
